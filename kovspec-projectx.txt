@@ -1,0 +1,62 @@
+Rendszer specifikáció
+
+Bevezetés
+
+Egy olyan applikációt szeretnénk fejleszteni, amiben az óvodai dolgozók értékelhetik a gyerekek viselkedését és közölhetik a szülők felé,
+ hogy mennyire érzik jól magukat az óvodában. Célunk, hogy segítsük az óvodai dolgozók és a szülők közti kommunikációt. 
+
+Áttekintés
+
+a termék környezete: 
+Úgy gondoljuk, hogy egy óvodában nem feltétlenül várható el, hogy azintézmény minden ott dolgozónak számítógépet biztosítson, 
+ a mai világban már szinte mindenki rendelkezik okos telefonnal, ezért az applikációnkat elsősorban androidra fejlesztjük.
+
+legfontosabb funkciók: 
+Az alkalmazást alapvetően két részre lehet bontani. Az egyik az óvodai dolgozóké, 
+ahol osztályozhatják a gyerekek viselkedését és hangulatát, illetve észrevételeiket, megjegyzéseiket rögzíthetik a gyerekekkel kapcsolatban.
+ A másik része a szülők felé irányul, ahová bejelentkezve a saját gyerekükről kapnak napi szintű tájékoztatást.
+
+Felhasználók: 
+Feltételezzük, hogy a szülők elfoglalt emberek, akiknek nem biztos, 
+hogy minden nap jut idejük arra, hogy konzultáljanak az óvónőkkel a gyerekükről.
+ Az óvónőktől viszont nem várható el, hogy emlékezzen minden gyerek pl hétfői állapotára pénteken.
+ A szülő szempontjából azért lesz hasznos az alkalmazás, mert bármikor értesülhet a gyerek hogylétéről. 
+ Az óvónő szempontjából pedig azért lesz hasznos, mert kevesebb információt kell észben tartania.
+ 
+Biztonság: 
+Mindkét felet (óvónő/szülő) egy bejelentkezési oldal fogadja. 
+Az óvónők az összes gyereket látni fogják és értékelni tudják őket. 
+A szülők csak a saját gyereküket látják és csak informálódni tudnak.
+ 
+A rendszer funkciói
+
+óvónő jogosultsága
+	új gyerek felvétele/eltávolítása
+	gyerek osztályozása (hangulat, magatartás)
+	megjegyzések (gyerekenként)
+	munkatársak elérhetőségeinek megtekintése
+	napi menü megtekintése
+	saját adatainak szerkesztése
+	szülők adatainak megtekintése
+
+Szülő jogosultságai
+	saját gyerek aktuális állapotának lekérdezése (napokra bontva)
+	óvónők adatainak megtekintése
+	napi menü megtekintése
+
+Használhatóság
+Mivel az alkalmazásunkat androidra készítjük és ma már szinte mindenkinek van okostelefonja és azt felhasználói szinten használni is tudja,
+ ezért az app használata semmilyen kellemetlenséggel nem fog járni. Pár perc használat után a felhasználó magabiztosan fogja tudni használni a programot.
+ A még gördülékenyebb működés érdekében összeállítunk egy dokumentumot, amiben a leggyakrabban felmerülő kérdésekre, problémákra kaphatnak a felhasználók választ.
+
+Teljesítmény
+Az alkalmazás futtatásához android 4.2 vagy újabb verzió szükséges. 
+
+Támogatottság
+A program élesítését követően tervezzük, hogy havonta adunk ki hozzá frissítést.
+
+Tervezési korlátok
+Az alkalmazás fejlesztésére Android Studio-t fogunk használni és model-view-controller szerkezeti mintát fogunk használni. 
+Verziókövetésre pedig GitHub-t fogunk használni.
+
+készítette: ProjectX
