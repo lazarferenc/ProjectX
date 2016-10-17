@@ -1,0 +1,6 @@
+Teendők:
+
+-issue létrehozása
+-követelményspecifikációt befejezni javítani
+-rendszertervet elkezdeni
+-prototípust elkezdeni
