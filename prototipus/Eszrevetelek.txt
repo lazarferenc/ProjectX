@@ -1,1 +1,5 @@
-Ha bármi a prototípussal kapcsolatos,észrevétel vagy változtatás van, akkor azt ide írjuk le.
+Ha barmi a prototipussal kapcsolatos,eszrevetel vagy valtoztatas van, akkor azt ide irjuk le.
+
+-A prototipusbol keszitettem egy kezdetlegest, nezzetek ra amelyik jobban uzemel azt fejleszzuk a tovabbiakban.
+-axure programmal nyithato meg a pr kiterjesztesu fajl.
+- ekezeteket hanyagoljuk a megerthetoseg kedveert!
