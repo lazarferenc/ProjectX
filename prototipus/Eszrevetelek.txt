@@ -3,3 +3,5 @@ Ha barmi a prototipussal kapcsolatos,eszrevetel vagy valtoztatas van, akkor azt 
 -A prototipusbol keszitettem egy kezdetlegest, nezzetek ra amelyik jobban uzemel azt fejleszzuk a tovabbiakban.
 -axure programmal nyithato meg a pr kiterjesztesu fajl.
 - ekezeteket hanyagoljuk a megerthetoseg kedveert!
+
+- az axure szerintem jól be fog válni a továbbiakban azt folytassuk, azt amit én kezdtem szerintem lehet törölni
