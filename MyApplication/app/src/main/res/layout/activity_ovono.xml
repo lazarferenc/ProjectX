@@ -15,8 +15,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/button5"
-        android:layout_toStartOf="@+id/button5"
+        android:layout_toLeftOf="@+id/btn_logout"
+        android:layout_toStartOf="@+id/btn_logout"
         android:id="@+id/textView"
         android:textSize="18sp" />
 
@@ -24,7 +24,7 @@
         android:text="Kilépés"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button5"
+        android:id="@+id/btn_logout"
         android:layout_below="@+id/textView"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_jelenleti"
 
-        android:layout_below="@+id/button5"
+        android:layout_below="@+id/btn_logout"
         android:layout_centerHorizontal="true" />
 
     <Button
