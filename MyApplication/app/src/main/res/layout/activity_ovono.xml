@@ -8,9 +8,69 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.user.myapplication.OvonoActivity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="lofaszocska"/>
 
+
+    <TextView
+        android:text="Bejelentkezve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button5"
+        android:layout_toStartOf="@+id/button5"
+        android:id="@+id/textView"
+        android:textSize="18sp" />
+
+    <Button
+        android:text="Kilépés"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Jelenléti ív"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_jelenleti"
+
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Étkezés"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_etkezes"
+        android:layout_below="@+id/btn_jelenleti"
+        android:layout_alignLeft="@+id/btn_jelenleti"
+        android:layout_alignStart="@+id/btn_jelenleti"
+        android:layout_marginTop="35dp"
+        android:layout_alignRight="@+id/btn_jelenleti"
+        android:layout_alignEnd="@+id/btn_jelenleti" />
+
+    <Button
+        android:text="Gyerekek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gyerekek"
+        android:layout_below="@+id/btn_etkezes"
+        android:layout_alignLeft="@+id/btn_etkezes"
+        android:layout_alignStart="@+id/btn_etkezes"
+        android:layout_marginTop="52dp"
+        android:layout_alignRight="@+id/btn_etkezes"
+        android:layout_alignEnd="@+id/btn_etkezes" />
+
+    <Button
+        android:text="Kollégák"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="83dp"
+        android:id="@+id/btn_kollegak"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btn_gyerekek"
+        android:layout_alignStart="@+id/btn_gyerekek"
+        android:layout_alignRight="@+id/btn_gyerekek"
+        android:layout_alignEnd="@+id/btn_gyerekek" />
 </RelativeLayout>
