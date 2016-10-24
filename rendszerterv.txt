@@ -36,6 +36,87 @@
 	  A szoftver a fent leírtakat megerősítve NONPROFIT, így semmilyen bevételi forrása nincs.
 	  Ingyenes a használata/letöltése, illetve REKLÁMOST egyaránt semmilyen formában nem tartalmaz.
 	  Megvalósítására 
-4) 
+
+4)  Az óvodával egyeztetve időpontul December 1. lett kitűzve,egyeztetve. Eddigre készül el a beta verzió,
+	és innentől kezdve indul a tesztüzem egy héten keresztül. 
+	Terveink szerint December 8-án,már a teljes/hibamentes verziónak kell használatban lennie.
+	
+5)	Erőforrásul az Android Studio nevezetű programot, egy MySQL szerverklienst, Google Play Áruházat használjuk,
+	hogy mindenki számára könnyen elérhető, frissíthető és nyomon követhető legyen.
+	Az alkalmazás kizárólag Anroiddal kompatibilis, annak a 4.2-es verziójával kezdődően.
+	
+--------------------------------------------- Tényleges Rendszerterv ---------------------------------------------
+
+1) A rendszer célja:
+	  Célunk az, hogy a szülők biztonságban tudják gyermeküket, érezzék a folyamatos törődést,
+	a folyamatos felügyelést/visszajelzést kapjanak arról, hogy egyes pedagógusaink személyre
+	szabottan foglalkoznak csemetéjükkel.
+	  Kizárólag a szülők és pedagógusok közötti kapcsolatteremtés,
+	a folyamatos infórmációcsere/könnyű tájékozódás miatt valósítottuk meg. 
+	  Mindennapjaink során kevés idő marad a személyes kontaktra, ha marad is nem megfelelően tág idő.
+	Az alkalmazás célja egyben ez is,hogy sokkal bővebb és részletesebb infócsomagot, adatokat és tájékoztatást
+	nyerjünk a gyermekről, annak egyéni nevelési módjairól, fejlődési menetéről, sajátos foglalkoztatottságáról.
+	
+2) Projekt terv:
+	I) Szerepkörök és felelősségek:	
+		Csapatunk három tagja; Demeter Ádám, Lázár Ferenc, Tímár Bence szoftverfejlesztőként a legtöbb háttérinformációval rendelkezik, így 
+		nem kifejezett szerepkörök alakultak ki. A specifikáció közös munka alapján született, a háttér és környezet, előkészületek Ádám,
+		Az adatbázis adatmodellje, pontos vázszerkezetének kidolgozása és vizuális megvalósítása Ferenc, a kezdetleges folyamatot tekintve
+		a dokumentáció, részletes leírás/folyamatok kidolgozása és levezetése Bence munkáját illeti.
+		A feladatok, SQL/adatbázis teendők Lázár Ferenc, Keretrendszer/háttér/kompatibilitás: Demeter Ádám, Alkalmazás megvalósítása,
+		a tényleges felület és háttérben futó parancsok/lekérdezések: Tímár Bence feladata, illetve a teljes csapaté.
+	II) Munkások és felelősségeik:
+	III) Ütemterv:
+	IV) Mérföldkövek:
+
+3) Üzleti folyamatok modellje:
+	I) Üzleti szereplők:
+	II) Üzleti Folyamatok:
+	III) Üzleti entitások:
+
+4) Követelmények:
+	I) Funkcionális követelmények:
+	II) Nemfunkcionális követelmények:
+	III) Törvényi előírások, szabványok
+	
+5) Funkcionális terv:
+	I) Rendszerszereplők
+	II) Rendszerhasználati esetek és lefutásaik
+	III) Határosztályok
+	IV) Menü-hierarchiák
+	V) Képernyőtervek
+
+6) Fizikai környezet:
+	I) Vásárolt softwarekomponensek és külső rendszerek
+	II) Hardver és hálózati topológia
+	III) Fizikai alrendszerek
+	IV) Fejlesztő eszközök
+	V) Keretrendszer
+	
+7) Absztrakt domain modell
+	I) Domain specifikáció, fogalmak
+	II) Absztrakt komponensek, ezek kapcsolatai
+	
+8) Architekturális terv
+	I) Architekturális tervezési minta (pl MVC)
+	II) Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
+	III) Változások kezelése
+	IV) Rendszer bővíthetősége
+	V) Biztonsági funkciók
+	
+9) Adatbázis terv
+	I) Logikai adatmodell
+	II) Tárolt eljárások
+	III) Fizikai adatmodellt legeneráló SQL szkript
+	
+10) Implementációs terv
+	I) Perzisztencia-osztályok
+	II) Üzleti logika osztályai
+	III) Kliensoldal osztályai
+
+11) Tesztterv
+12) Telepítési terv
+13) Karbantartási terv
+--------------------------------------------- Tényleges Rendszerterv ---------------------------------------------
 	
 	
