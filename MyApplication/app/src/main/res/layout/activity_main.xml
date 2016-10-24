@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Óvónő vagyok"
+        android:id="@+id/checkBox"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="144dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Szülő vagyok"
+        android:id="@+id/checkBox2"
+        android:layout_marginTop="38dp"
+        android:layout_alignTop="@+id/checkBox"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Jelszó"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_above="@+id/jelszo"
+        android:layout_alignLeft="@+id/jelszo"
+        android:layout_alignStart="@+id/jelszo"
+        android:layout_alignRight="@+id/jelszo"
+        android:layout_alignEnd="@+id/jelszo"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/jelszo"
+        android:text="12345678"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/felhasznalonev"
+        android:layout_alignStart="@+id/felhasznalonev"
+        android:layout_alignRight="@+id/felhasznalonev"
+        android:layout_alignEnd="@+id/felhasznalonev" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belépés"
+        android:id="@+id/button"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/checkBox2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/felhasznalonev"
+        android:layout_marginBottom="46dp"
+        android:layout_above="@+id/jelszo"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
