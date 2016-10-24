@@ -1,0 +1,41 @@
+!--  Rendszerterv - OviBot  | - (részletes rendszerterv)
+|---------------------------|
+
+
+1) 	Az OviBot egy nonprofit,márkafüggetlen szoftver. Kezel, módosít, visszaad és tájékoztat.
+		"OviBot - A teljes gyermekbiztonság"
+
+2)	Kizárólag a szülők és pedagógusok közötti kapcsolatteremtés,
+	a folyamatos infórmációcsere/könnyű tájékozódás miatt valósítottuk meg. 
+	Célunk az, hogy a szülők biztonságban tudják gyermeküket, érezzék a folyamatos törődést,
+	a folyamatos felügyelést/visszajelzést kapjanak arról, hogy egyes pedagógusaink személyre
+	szabottan foglalkoznak csemetéjükkel.
+	
+3)	Tervünk egy magasan kidolgozott, átlátható és könnyen kezelhető alkalmazást tár a felhasználók felé.
+	 A szülők ezáltal könnyen betekintést nyerhetnek gyermekük napi rutinjába, illetve abba, hogy hogyan is érezte magát,
+		hogyan viselkedett aznap, mennyire tett eleget a megfelelési normá(k)nak.
+		Visszakövethetik napra pontosan a hiányzásokat, ezzel tartva magukat a megszabott maximumhoz, üzenhetnek a vezetőségnek,
+		egyes dolgozóknak a nap minden percében,melyet megkapva azonnal jelez az adott félnek a program.
+		Megtekinthetik az adott napi étkezést, amit egy táblázat visszamenőleg is felsorol számukra.
+		Részletes felsorolást kapnak az óvodapedagógusokról is, az összes elérhetőségükkel együtt.
+	  A pedagógusok számára egy elég tág és összetett rendszer nyílik a belépéskor. 
+		Megjeleníti számukra a jelenléti ívet, csoportra szabottan. Minden óvónő lát minden gyermeket az adott
+		napon, így a nap bármely szakaszában módosíthatják az értékeket viselkedésük és hangulatuk alapján.
+		Amennyiben a gyermek nem jelent meg az értékelni kívánt időben, a rendszer egyértelműen elutasítja a 
+		véleményfoglalást.
+		Áttekinthetik a napi étkezéseket/étlapot,melyet az óvoda vezetősége minden héten közzétesz
+		dátum és típus szerint.
+		Egy külön menüben felsorolja nekik az alkalmazást a gyermekeket név szerint, ABC sorrendben,
+		ahol kedvükre válogathatnak közöttük. Nevükre lépve/kattintva részletes információt kapnak 
+		az adott csemetéről. (születési dátum,lakhely,tajszám,anyja/lakhely,tel/, apja/lakhely,tel/
+		Végül egy teljes listát is kapnak a kollégákról, ahol feltünteti a vezetőség az összes elérhetőséget,
+		fontosabb adatot az alkalmazottairól.
+	  Az alkalmazáshoz mindenképp szükséges internethasználat, illetve egy Android rendszerű
+	  okostelefon, legalább 4.2-es verzióval. Letöltve,majd telepítve az alkalmazást már használatba is 
+	  vehetik felhasználóink a rendszert.
+	  A szoftver a fent leírtakat megerősítve NONPROFIT, így semmilyen bevételi forrása nincs.
+	  Ingyenes a használata/letöltése, illetve REKLÁMOST egyaránt semmilyen formában nem tartalmaz.
+	  Megvalósítására 
+4) 
+	
+	
