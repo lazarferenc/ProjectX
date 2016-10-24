@@ -1,6 +1,7 @@
 ﻿Teendők:
 
--issue létrehozása
+
 -követelményspecifikációt befejezni javítani
--rendszertervet elkezdeni
--prototípust folytatni
+-rendszertervet elkezdeni, okt 30ig befejezni //Elkezdve
+-prototípus befejezeve //BEFEJEZVE
+-feladatok leosztasa issue kiirasa a fejleszteshez
