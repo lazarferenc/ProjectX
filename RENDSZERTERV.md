@@ -44,7 +44,7 @@
 	hogy mindenki számára könnyen elérhető, frissíthető és nyomon követhető legyen.
 	Az alkalmazás kizárólag Anroiddal kompatibilis, annak a 4.2-es verziójával kezdődően.
 	
-**--------------------------------------------- Tényleges Rendszerterv ---------------------------------------------**
+----------------------------------------------- Tényleges Rendszerterv -----------------------------------------------
 
 ###1) A rendszer célja:
 	  Célunk az, hogy a szülők biztonságban tudják gyermeküket, érezzék a folyamatos törődést,
@@ -57,7 +57,7 @@
 	nyerjünk a gyermekről, annak egyéni nevelési módjairól, fejlődési menetéről, sajátos foglalkoztatottságáról.
 	
 ###2) Projekt terv:
-	* Szerepkörök és felelősségek:	
+	- Szerepkörök és felelősségek:	
 		Csapatunk három tagja; Demeter Ádám, Lázár Ferenc, Tímár Bence szoftverfejlesztőként a legtöbb háttérinformációval rendelkezik, így 
 		nem kifejezett szerepkörök alakultak ki. A specifikáció közös munka alapján született, a háttér és környezet, előkészületek Ádám,
 		Az adatbázis adatmodellje, pontos vázszerkezetének kidolgozása és vizuális megvalósítása Ferenc, a kezdetleges folyamatot tekintve
@@ -65,20 +65,20 @@
 		A feladatok, SQL/adatbázis teendők Lázár Ferenc, Keretrendszer/háttér/kompatibilitás: Demeter Ádám, Alkalmazás megvalósítása,
 		a tényleges felület és háttérben futó parancsok/lekérdezések: Tímár Bence feladata, illetve a teljes csapaté.
 	
-	* Ütemterv: Nagyobb léptek együttes,megbeszéltek szerint elvégzése, ennek dokumentálása, folyamatos levezetése.
+	- Ütemterv: Nagyobb léptek együttes,megbeszéltek szerint elvégzése, ennek dokumentálása, folyamatos levezetése.
 	Kiosztott feladatok lelkiismeretes és hibamentes elvégzése, üzenetek hozzáadása.
 	
-	* Mérföldkövek: Követelményspecifikáció elkészítése, adatmodell/prototípus létrehozása, rendszerterv véglegesítése, 
+	- Mérföldkövek: Követelményspecifikáció elkészítése, adatmodell/prototípus létrehozása, rendszerterv véglegesítése, 
 	háttéradatbázis/webszerver létrehozása,konfigurálása, háttérben futó főprogram elkészítése, adatbázissal összehangolása,
 	beta verzió kiadása, tesztelési folyamatok, majd tesztüzem és ezután teljes verzió üzembe helyezése.
 
 ###3) Üzleti folyamatok modellje:
-	* Üzleti szereplők: Üzleti szereplőket nem tartalmaz,hisz nonprofit a szoftver. 
-	* Üzleti Folyamatok: Üzleti folyamatban nincs szerepe, nem vesz részt.
-	* Üzleti entitások: Üzleti entitása/valódi létezése egyaránt nincs, kidolgozására nincs szükség.
+	- Üzleti szereplők: Üzleti szereplőket nem tartalmaz,hisz nonprofit a szoftver. 
+	- Üzleti Folyamatok: Üzleti folyamatban nincs szerepe, nem vesz részt.
+	- Üzleti entitások: Üzleti entitása/valódi létezése egyaránt nincs, kidolgozására nincs szükség.
 
 ###4) Követelmények:
-	* Funkcionális követelmények:
+	- Funkcionális követelmények:
 		Szoftverünk egy óvodai kisegítő lehetőség a könnyebb információcsere,kapcsolattartás céljából.
 			A rendszer kielégíti mind a szülőket, mind a pedagógusokat az információcsere lehetőségével. 
 			A pedagógus rögzítheti a gyermek mindennapos viselkedését, aznapi hangulati beállítottságát, attól függően,hogy
@@ -89,15 +89,15 @@
 			ettől függően más-más kezelőfelületet kapnak a felhasználók. A PEDAGÓGUS több paramétert is közöl a bemenettel,
 			míg a szülő CSAK üzeneti paramétert tud közölni.
 		
-	* Nemfunkcionális követelmények: Nincs rá igény a szoftver során.
+	- Nemfunkcionális követelmények: Nincs rá igény a szoftver során.
 	
-	* Törvényi előírások, szabványok: Törvényi előírások szerint az adatokat kizárólag egyénenként adjuk ki,
+	- Törvényi előírások, szabványok: Törvényi előírások szerint az adatokat kizárólag egyénenként adjuk ki,
 	ezt másra a szoftver nem használja fel és nem adja ki. A kód MVC szabvány alapján íródik.
 	
 ###5) Funkcionális terv: ( UML diagramok, szekvencia, a határosztályok tartalmazzák a képernyőképeket)
 	|-- http://mdy88p.axshare.com/#g=1&p=ovoda --|
 	
-	* Rendszerszereplők
+	- Rendszerszereplők
 		- Ovoda
 			-Ovono_menu
 				Ovono_jelenleti
@@ -110,20 +110,20 @@
 			-Szulo_gyerek
 			-Szulo_ovonok
 			
-	* Rendszerhasználati esetek és lefutásaik
-	* Határosztályok
-	* Menü-hierarchiák
-	* Képernyőtervek
+	- Rendszerhasználati esetek és lefutásaik
+	- Határosztályok
+	- Menü-hierarchiák
+	- Képernyőtervek
 
 ###6) Fizikai környezet:
-	* Vásárolt softwarekomponensek és külső rendszerek: Külső rendszerként megemlíthetjük egy, a tesztelési folyamatra használt
+	- Vásárolt softwarekomponensek és külső rendszerek: Külső rendszerként megemlíthetjük egy, a tesztelési folyamatra használt
 	min. Android 4.2-es verzióval felszerelt okostelefonunkat. Egyéb fizetős szoftvert, programcsaládot a fejlesztés során nem vettünk igénybe.
 	
-	* Hardver és hálózati topológia:
+	- Hardver és hálózati topológia:
 	
-	* Fizikai alrendszerek:
+	- Fizikai alrendszerek:
 	
-	* Fejlesztőeszközök: Fejlesztőeszközünk az alap programunkhoz, Android Studio
+	- Fejlesztőeszközök: Fejlesztőeszközünk az alap programunkhoz, Android Studio
 							Az előkészületekhez, menütervezés használtuk: axshare.com
 							Verziókövetéshez, dokumentációhoz: github.com (tortoisegit,git for windows, windows desktop)
 							Az adatbázis előkészületeihez, megtervezéséhez: MySQL Workbench
@@ -155,6 +155,6 @@
 ###11) Tesztterv
 ###12) Telepítési terv
 ###13) Karbantartási terv
-**--------------------------------------------- Tényleges Rendszerterv ---------------------------------------------**
+----------------------------------------------- Tényleges Rendszerterv -----------------------------------------------
 	
 	
