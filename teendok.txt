@@ -5,3 +5,5 @@
 -rendszertervet elkezdeni, okt 30ig befejezni //Elkezdve
 -prototípus befejezeve //BEFEJEZVE
 -feladatok leosztasa issue kiirasa a fejleszteshez
+
+Továbbiakban Issues használata, így ez feleslegessé vált
