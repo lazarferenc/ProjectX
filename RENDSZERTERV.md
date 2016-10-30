@@ -1,16 +1,16 @@
 #Rendszerterv - OviBot  | - (részletes rendszerterv)
 
 
-###1) 	Az OviBot egy nonprofit,márkafüggetlen szoftver. Kezel, módosít, visszaad és tájékoztat.
+####1) 	Az OviBot egy nonprofit,márkafüggetlen szoftver. Kezel, módosít, visszaad és tájékoztat.
 		"OviBot - A teljes gyermekbiztonság"
 
-###2)	Kizárólag a szülők és pedagógusok közötti kapcsolatteremtés,
+####2)	Kizárólag a szülők és pedagógusok közötti kapcsolatteremtés,
 	a folyamatos infórmációcsere/könnyű tájékozódás miatt valósítottuk meg. 
 	Célunk az, hogy a szülők biztonságban tudják gyermeküket, érezzék a folyamatos törődést,
 	a folyamatos felügyelést/visszajelzést kapjanak arról, hogy egyes pedagógusaink személyre
 	szabottan foglalkoznak csemetéjükkel.
 	
-###3)	Tervünk egy magasan kidolgozott, átlátható és könnyen kezelhető alkalmazást tár a felhasználók felé.
+####3)	Tervünk egy magasan kidolgozott, átlátható és könnyen kezelhető alkalmazást tár a felhasználók felé.
 	 A szülők ezáltal könnyen betekintést nyerhetnek gyermekük napi rutinjába, illetve abba, hogy hogyan is érezte magát,
 		hogyan viselkedett aznap, mennyire tett eleget a megfelelési normá(k)nak.
 		Visszakövethetik napra pontosan a hiányzásokat, ezzel tartva magukat a megszabott maximumhoz, üzenhetnek a vezetőségnek,
@@ -36,11 +36,11 @@
 	  Ingyenes a használata/letöltése, illetve REKLÁMOST egyaránt semmilyen formában nem tartalmaz.
 	  Megvalósítására 
 
-###4)  Az óvodával egyeztetve időpontul December 1. lett kitűzve,egyeztetve. Eddigre készül el a beta verzió,
+####4)  Az óvodával egyeztetve időpontul December 1. lett kitűzve,egyeztetve. Eddigre készül el a beta verzió,
 	és innentől kezdve indul a tesztüzem egy héten keresztül. 
 	Terveink szerint December 8-án,már a teljes/hibamentes verziónak kell használatban lennie.
 	
-###5)	Erőforrásul az Android Studio nevezetű programot, egy MySQL szerverklienst, Google Play Áruházat használjuk,
+####5)	Erőforrásul az Android Studio nevezetű programot, egy MySQL szerverklienst, Google Play Áruházat használjuk,
 	hogy mindenki számára könnyen elérhető, frissíthető és nyomon követhető legyen.
 	Az alkalmazás kizárólag Anroiddal kompatibilis, annak a 4.2-es verziójával kezdődően.
 	

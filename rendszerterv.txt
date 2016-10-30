@@ -111,18 +111,21 @@
 			-Szulo_gyerek
 			-Szulo_ovonok
 			
-	II) Rendszerhasználati esetek és lefutásaik
-	III) Határosztályok
-	IV) Menü-hierarchiák
-	V) Képernyőtervek
+	II) Rendszerhasználati esetek és lefutásaik: http://mdy88p.axshare.com/#g=1&p=ovoda
+	III) Határosztályok: http://mdy88p.axshare.com/#g=1&p=ovoda
+	IV) Menü-hierarchiák: Nyomon követhetőek itt: http://mdy88p.axshare.com/#g=1&p=ovoda
+	V) Képernyőtervek: Ezek láthatóak a következő linken: http://mdy88p.axshare.com/#g=1&p=ovoda
 
 6) Fizikai környezet:
 	I) Vásárolt softwarekomponensek és külső rendszerek: Külső rendszerként megemlíthetjük egy, a tesztelési folyamatra használt
 	min. Android 4.2-es verzióval felszerelt okostelefonunkat. Egyéb fizetős szoftvert, programcsaládot a fejlesztés során nem vettünk igénybe.
 	
-	II) Hardver és hálózati topológia:
+	II) Hardver és hálózati topológia: RAM/Fizikai memória - 512mb
+									   TÁRHELY: 332mb / program ennyi helyet vesz igénybe a készüléken.
+									   
+									   Hálózat: Internet hozzáférés
 	
-	III) Fizikai alrendszerek:
+	III) Fizikai alrendszerek: /0/
 	
 	IV) Fejlesztőeszközök: Fejlesztőeszközünk az alap programunkhoz, Android Studio
 							Az előkészületekhez, menütervezés használtuk: axshare.com
@@ -133,15 +136,28 @@
 	V) Keretrendszer: minimum Android 4.2 apk
 	
 7) Absztrakt domain modell
-	I) Domain specifikáció, fogalmak
+	I) Domain specifikáció: A szoftver nem igényel webcímet/domaint, illetve az óvodának sincsen saját weboldala.
+							Webtárhelyünk a Synex Kft. biztosítja - http://helyiberles.hu
 	II) Absztrakt komponensek, ezek kapcsolatai
 	
 8) Architekturális terv
-	II) Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
-	I) Architekturális tervezési minta (pl MVC)
-	III) Változások kezelése
-	IV) Rendszer bővíthetősége
-	V) Biztonsági funkciók
+	II) Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai: /0/
+	
+	I) Architekturális tervezési minta: OOP - Objective Oriented Programming
+										MVC - Model/View/Controller
+										
+	III) Változások kezelése: A változásokat folyamatosan egy verziókövető rendszerben összegezzük,
+							  vezetjük és dátumozzuk. - GitHub
+	
+	IV) Rendszer bővíthetősége: OOP minta szerint íródott, így könnyen átlátható és módosítható.
+								Az ősosztályokból származtatva pillanatok alatt létrehozható másodlagos funkció/egyéb módosítás.
+								
+								Az MVC minta szerint külön elérés alapján, külön fájlokban tárul elénk a háttérprogram, a design elemei,
+								és az a felület amit láthatunk mikor fut a program. 
+	
+	V) Biztonsági funkciók: A biztonság érdekében az adatbázisban is állítottunk fel védelmi szinteket,
+							illetve a szoftver a bejelentkezéstől minden egyes függvényig figyel a speciális karakterekre,
+							külső információból ismert visszaélési lehetőségekre.
 	
 9) Adatbázis terv
 	I) Logikai adatmodell
@@ -154,7 +170,9 @@
 	III) Kliensoldal osztályai
 
 11) Tesztterv
+
 12) Telepítési terv
+
 13) Karbantartási terv
 --------------------------------------------- Tényleges Rendszerterv ---------------------------------------------
 	
