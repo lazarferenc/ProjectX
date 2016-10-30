@@ -138,7 +138,8 @@
 7) Absztrakt domain modell
 	I) Domain specifikáció: A szoftver nem igényel webcímet/domaint, illetve az óvodának sincsen saját weboldala.
 							Webtárhelyünk a Synex Kft. biztosítja - http://helyiberles.hu
-	II) Absztrakt komponensek, ezek kapcsolatai
+							
+	II) Absztrakt komponensek, ezek kapcsolatai: /0/
 	
 8) Architekturális terv
 	II) Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai: /0/
@@ -173,7 +174,16 @@
 
 12) Telepítési terv
 
+	A webszerver/tárhely és a háttérprogramok Október 31 - 24:00-ig véglegesítésre, telepítésre és beüzemelésre kerülnek.
+	A béta verziónk November 1-jén kerül a nyilvánosság elé, ekkor már a tesztüzem kezdetét veszi és használatba vehetik a kolegák, szülők.
+	Amennyiben a tesztüzem hibamentesen lezajlik, a kisebb észrevételek is javításra kerülnek a teljes verzió December 1-jén kerül napvilágra.
+	Ekkor már napi szinten folyamatosan nyomon követjük a szoftver működését, üzemszerűen működik majd a biztonsági adatmentő szoftverünk is hozzá.
+
 13) Karbantartási terv
+
+	Kifagyás, leállás, hirtelen adatbázis hiba felléptekor a rendszer magától újraindul és pár perc alatt használhatóvá válik.
+	Biztonsági adatmentő szoftver - Minden 5. percben biztonsági másolatot készít az SQL fájlról,amit azonnal felmásol a tárhelyünkre.
+	
 --------------------------------------------- Tényleges Rendszerterv ---------------------------------------------
 	
 	

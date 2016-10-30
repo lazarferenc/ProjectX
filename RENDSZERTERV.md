@@ -110,18 +110,21 @@
 			-Szulo_gyerek
 			-Szulo_ovonok
 			
-	- Rendszerhasználati esetek és lefutásaik
-	- Határosztályok
-	- Menü-hierarchiák
-	- Képernyőtervek
+	- Rendszerhasználati esetek és lefutásaik: http://mdy88p.axshare.com/#g=1&p=ovoda
+	- Határosztályok: http://mdy88p.axshare.com/#g=1&p=ovoda
+	- Menü-hierarchiák: Nyomon követhetőek itt: http://mdy88p.axshare.com/#g=1&p=ovoda
+	- Képernyőtervek: Ezek láthatóak a következő linken: http://mdy88p.axshare.com/#g=1&p=ovoda
 
 ###6) Fizikai környezet:
 	- Vásárolt softwarekomponensek és külső rendszerek: Külső rendszerként megemlíthetjük egy, a tesztelési folyamatra használt
 	min. Android 4.2-es verzióval felszerelt okostelefonunkat. Egyéb fizetős szoftvert, programcsaládot a fejlesztés során nem vettünk igénybe.
 	
-	- Hardver és hálózati topológia:
+	- Hardver és hálózati topológia: RAM/Fizikai memória - 512mb
+									   TÁRHELY: 332mb / program ennyi helyet vesz igénybe a készüléken.
+									   
+									   Hálózat: Internet hozzáférés
 	
-	- Fizikai alrendszerek:
+	- Fizikai alrendszerek: /0/
 	
 	- Fejlesztőeszközök: Fejlesztőeszközünk az alap programunkhoz, Android Studio
 							Az előkészületekhez, menütervezés használtuk: axshare.com
@@ -129,32 +132,57 @@
 							Az adatbázis előkészületeihez, megtervezéséhez: MySQL Workbench
 							A végleges adatbázis kivitelezése: (egyelőre még nem eldöntött)
 	
-	V) Keretrendszer: minimum Android 4.2 apk
+	- Keretrendszer: minimum Android 4.2 apk
 	
 ###7) Absztrakt domain modell
-	I) Domain specifikáció, fogalmak
-	II) Absztrakt komponensek, ezek kapcsolatai
+	- Domain specifikáció: A szoftver nem igényel webcímet/domaint, illetve az óvodának sincsen saját weboldala.
+							Webtárhelyünk a Synex Kft. biztosítja - http://helyiberles.hu
+							
+	- Absztrakt komponensek, ezek kapcsolatai: /0/
 	
 ###8) Architekturális terv
-	II) Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
-	I) Architekturális tervezési minta (pl MVC)
-	III) Változások kezelése
-	IV) Rendszer bővíthetősége
-	V) Biztonsági funkciók
+	- Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai: /0/
+	
+	- Architekturális tervezési minta: OOP - Objective Oriented Programming
+										MVC - Model/View/Controller
+										
+	- Változások kezelése: A változásokat folyamatosan egy verziókövető rendszerben összegezzük,
+							  vezetjük és dátumozzuk. - GitHub
+	
+	- Rendszer bővíthetősége: OOP minta szerint íródott, így könnyen átlátható és módosítható.
+								Az ősosztályokból származtatva pillanatok alatt létrehozható másodlagos funkció/egyéb módosítás.
+								
+								Az MVC minta szerint külön elérés alapján, külön fájlokban tárul elénk a háttérprogram, a design elemei,
+								és az a felület amit láthatunk mikor fut a program. 
+	
+	- Biztonsági funkciók: A biztonság érdekében az adatbázisban is állítottunk fel védelmi szinteket,
+							illetve a szoftver a bejelentkezéstől minden egyes függvényig figyel a speciális karakterekre,
+							külső információból ismert visszaélési lehetőségekre.
 	
 ###9) Adatbázis terv
-	I) Logikai adatmodell
-	II) Tárolt eljárások
-	III) Fizikai adatmodellt legeneráló SQL szkript
+	- Logikai adatmodell
+	- Tárolt eljárások
+	- Fizikai adatmodellt legeneráló SQL szkript
 	
 ###10) Implementációs terv
-	I) Perzisztencia-osztályok
-	II) Üzleti logika osztályai
-	III) Kliensoldal osztályai
+	- Perzisztencia-osztályok
+	- Üzleti logika osztályai
+	- Kliensoldal osztályai
 
 ###11) Tesztterv
+
 ###12) Telepítési terv
+
+	A webszerver/tárhely és a háttérprogramok Október 31 - 24:00-ig véglegesítésre, telepítésre és beüzemelésre kerülnek.
+	A béta verziónk November 1-jén kerül a nyilvánosság elé, ekkor már a tesztüzem kezdetét veszi és használatba vehetik a kolegák, szülők.
+	Amennyiben a tesztüzem hibamentesen lezajlik, a kisebb észrevételek is javításra kerülnek a teljes verzió December 1-jén kerül napvilágra.
+	Ekkor már napi szinten folyamatosan nyomon követjük a szoftver működését, üzemszerűen működik majd a biztonsági adatmentő szoftverünk is hozzá.
+
 ###13) Karbantartási terv
------------------------------------------------ Tényleges Rendszerterv -----------------------------------------------
+
+	Kifagyás, leállás, hirtelen adatbázis hiba felléptekor a rendszer magától újraindul és pár perc alatt használhatóvá válik.
+	Biztonsági adatmentő szoftver - Minden 5. percben biztonsági másolatot készít az SQL fájlról,amit azonnal felmásol a tárhelyünkre.
+	
+--------------------------------------------- Tényleges Rendszerterv ---------------------------------------------
 	
 	
