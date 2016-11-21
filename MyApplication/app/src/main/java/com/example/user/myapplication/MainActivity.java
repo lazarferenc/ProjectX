@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn=(Button)findViewById(R.id.btn_login);
-        cb_szulo=(CheckBox)findViewById(R.id.cb_szulo);
+        /*cb_szulo=(CheckBox)findViewById(R.id.cb_szulo);
         cb_ovono=(CheckBox)findViewById(R.id.cb_ovono);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent=new Intent(MainActivity.this,OvonoActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         CheckBox cb_szulo = (CheckBox) findViewById(R.id.cb_szulo);
         cb_szulo.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
