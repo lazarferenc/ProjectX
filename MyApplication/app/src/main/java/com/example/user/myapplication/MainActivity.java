@@ -41,11 +41,9 @@ public class MainActivity extends AppCompatActivity {
                     btn.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            //Intent intent1= new Intent(MainActivity.this,/*SzuloActivity.class);
-                           // startActivity(intent1);*/
+                            Intent intent1= new Intent(MainActivity.this,SzuloActivity.class);
+                            startActivity(intent1);
 
-                            ///Szülő nézetet elkészíteni!
-                            
                         }
                     });
                 }
