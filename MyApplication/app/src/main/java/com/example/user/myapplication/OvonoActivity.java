@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 
 public class OvonoActivity extends AppCompatActivity {
     Button btn;
@@ -13,7 +12,7 @@ public class OvonoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ovono);
-        btn=(Button)findViewById(R.id.btn_jelenleti);
+        btn=(Button)findViewById(R.id.btn_gyerekem);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

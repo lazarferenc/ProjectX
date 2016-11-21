@@ -8,11 +8,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 
 public class MainActivity extends AppCompatActivity {
     Button btn;
-    CheckBox szulo_checkbox;
-    CheckBox ovono_checkbox;
+    CheckBox cb_szulo;
+    CheckBox cb_ovono;
 
 
     @Override
@@ -21,25 +22,54 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn=(Button)findViewById(R.id.btn_login);
-        szulo_checkbox=(CheckBox)findViewById(R.id.cb_szulo);
-        ovono_checkbox=(CheckBox)findViewById(R.id.cb_ovono);
+        cb_szulo=(CheckBox)findViewById(R.id.cb_szulo);
+        cb_ovono=(CheckBox)findViewById(R.id.cb_ovono);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*if(ovono_checkbox.getId()==0)*/
-
                 Intent intent=new Intent(MainActivity.this,OvonoActivity.class);
                 startActivity(intent);
             }
         });
+
+        CheckBox cb_szulo = (CheckBox) findViewById(R.id.cb_szulo);
+        cb_szulo.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked)
+                {
+                    btn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            //Intent intent1= new Intent(MainActivity.this,/*SzuloActivity.class);
+                           // startActivity(intent1);*/
+
+                            ///Szülő nézetet elkészíteni!
+                            
+                        }
+                    });
+                }
+            }
+        });
+        CheckBox cb_ovono = (CheckBox) findViewById(R.id.cb_ovono);
+        cb_ovono.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+             if(isChecked)
+             {
+                 btn.setOnClickListener(new View.OnClickListener() {
+                     @Override
+                     public void onClick(View view) {
+                         Intent intent=new Intent(MainActivity.this,OvonoActivity.class);
+                         startActivity(intent);
+                     }
+                 });
+
+             }
+            }
+        });
     }
 
-    /*@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
