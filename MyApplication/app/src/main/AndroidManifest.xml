@@ -18,8 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".OvonoActivity" />
-        <activity android:name=".JelenletiActivity" />
-        <activity android:name=".SzuloActivity"></activity>
+        <activity android:name=".OvonoJelenletiActivity" />
+        <activity android:name=".SzuloActivity" />
     </application>
 
 </manifest>
