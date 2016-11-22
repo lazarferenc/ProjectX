@@ -37,7 +37,7 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:text="Jelenléti ív"
+        android:text="Gyerekem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_gyerekem"
@@ -46,40 +46,29 @@
         android:layout_centerHorizontal="true" />
 
     <Button
+        android:text="Óvónők"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ovonok"
+        android:layout_below="@+id/btn_gyerekem"
+        android:layout_alignRight="@+id/btn_gyerekem"
+        android:layout_alignEnd="@+id/btn_gyerekem"
+        android:layout_marginTop="60dp"
+        android:layout_alignLeft="@+id/btn_gyerekem"
+        android:layout_alignStart="@+id/btn_gyerekem" />
+
+
+    <Button
         android:text="Étkezés"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_etkezes"
-        android:layout_below="@+id/btn_gyerekem"
-        android:layout_alignLeft="@+id/btn_gyerekem"
-        android:layout_alignStart="@+id/btn_gyerekem"
-        android:layout_marginTop="35dp"
-        android:layout_alignRight="@+id/btn_gyerekem"
-        android:layout_alignEnd="@+id/btn_gyerekem" />
-
-    <Button
-        android:text="Gyerekek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_gyerekek"
-        android:layout_below="@+id/btn_etkezes"
-        android:layout_alignLeft="@+id/btn_etkezes"
-        android:layout_alignStart="@+id/btn_etkezes"
-        android:layout_marginTop="52dp"
-        android:layout_alignRight="@+id/btn_etkezes"
-        android:layout_alignEnd="@+id/btn_etkezes" />
-
-    <Button
-        android:text="Kollégák"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="83dp"
-        android:id="@+id/btn_kollegak"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/btn_gyerekek"
-        android:layout_alignStart="@+id/btn_gyerekek"
-        android:layout_alignRight="@+id/btn_gyerekek"
-        android:layout_alignEnd="@+id/btn_gyerekek" />
+        android:layout_below="@+id/btn_ovonok"
+        android:layout_alignLeft="@+id/btn_ovonok"
+        android:layout_alignStart="@+id/btn_ovonok"
+        android:layout_marginTop="60dp"
+        android:layout_alignRight="@+id/btn_ovonok"
+        android:layout_alignEnd="@+id/btn_ovonok" />
 
 
 </RelativeLayout>
