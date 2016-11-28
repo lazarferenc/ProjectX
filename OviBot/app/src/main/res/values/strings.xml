@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">OviBot</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Jelszó</string>
+    <string name="action_sign_in">Belépés</string>
+    <string name="action_log_out">Kilépés</string>
+
+    <string name="greeting">Hello %1$s!</string>
+
+    <!-- Errors -->
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+</resources>
