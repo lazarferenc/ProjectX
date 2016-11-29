@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">OviBot</string>
 
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Jelszó</string>
-    <string name="action_sign_in">Belépés</string>
-    <string name="action_log_out">Kilépés</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_log_out">Logout</string>
 
-    <string name="greeting">Hello %1$s!</string>
+    <string name="greeting" translatable="false">Hello %1$s!</string>
 
     <!-- Errors -->
     <string name="error_invalid_email">This email address is invalid</string>

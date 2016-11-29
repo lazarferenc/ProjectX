@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OviBot</string>
+    <string name="action_log_out">Kilépés</string>
+    <string name="action_sign_in">Belépés</string>
+    <string name="error_field_required">Kötelező mező</string>
+    <string name="prompt_password">Jelszó</string>
+    <string name="error_invalid_password">A jelszó túl rövid</string>
+    <string name="error_invalid_email">Érvénytelen email cím</string>
+    <string name="error_incorrect_password">Hibás jelszó</string>
+</resources>

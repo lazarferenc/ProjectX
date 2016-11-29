@@ -31,7 +31,7 @@ public class Ovono extends AppCompatActivity {
             }
         });
 
-        jelenleti = (Button) findViewById(R.id.btn_jelenleti);
+        jelenleti = (Button) findViewById(R.id.btn_gyerekem);
         jelenleti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +60,7 @@ public class Ovono extends AppCompatActivity {
             }
         });
 
-        kollegak = (Button) findViewById(R.id.btn_kollegak);
+        kollegak = (Button) findViewById(R.id.btn_ovonok);
         kollegak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

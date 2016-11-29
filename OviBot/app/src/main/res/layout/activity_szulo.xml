@@ -13,20 +13,20 @@ tools:context="com.rft.pti.eke.ovibot.Szulo">
     android:text="Óvónők"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/btn_kollegak"
+    android:id="@+id/btn_ovonok"
     android:layout_centerVertical="true"
     android:layout_alignLeft="@+id/btn_etkezes"
     android:layout_alignStart="@+id/btn_etkezes"
-    android:layout_alignRight="@+id/btn_jelenleti"
-    android:layout_alignEnd="@+id/btn_jelenleti" />
+    android:layout_alignRight="@+id/btn_gyerekem"
+    android:layout_alignEnd="@+id/btn_gyerekem" />
 
     <Button
         android:text="Gyerekem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_jelenleti"
+        android:id="@+id/btn_gyerekem"
 
-        android:layout_above="@+id/btn_kollegak"
+        android:layout_above="@+id/btn_ovonok"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="47dp" />
 
@@ -36,11 +36,11 @@ tools:context="com.rft.pti.eke.ovibot.Szulo">
     android:layout_height="wrap_content"
     android:id="@+id/btn_etkezes"
         android:layout_marginTop="51dp"
-        android:layout_below="@+id/btn_kollegak"
-        android:layout_alignLeft="@+id/btn_jelenleti"
-        android:layout_alignStart="@+id/btn_jelenleti"
-        android:layout_alignRight="@+id/btn_jelenleti"
-        android:layout_alignEnd="@+id/btn_jelenleti" />
+        android:layout_below="@+id/btn_ovonok"
+        android:layout_alignLeft="@+id/btn_gyerekem"
+        android:layout_alignStart="@+id/btn_gyerekem"
+        android:layout_alignRight="@+id/btn_gyerekem"
+        android:layout_alignEnd="@+id/btn_gyerekem" />
 
     <Button
         android:id="@+id/log_out_button"
