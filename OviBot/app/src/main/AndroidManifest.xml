@@ -44,7 +44,7 @@
         <activity
             android:name=".SzuloGyerekem"
             android:screenOrientation="portrait" />
-        <activity android:name=".SzuloOvonok" />
+        <activity android:name=".SzuloOvonok"  android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
