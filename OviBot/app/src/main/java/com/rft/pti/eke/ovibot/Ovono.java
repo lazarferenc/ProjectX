@@ -19,14 +19,14 @@ public class Ovono extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ovono);
 
-       // greetingText = (TextView) findViewById(R.id.greeting_textView);
+        //greetingText = (TextView) findViewById(R.id.greeting_textView);
         logOutButton = (Button) findViewById(R.id.log_out_button);
         logOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 storage.clear();
-                Intent intent = new Intent(Ovono.this, LoginActivity.class);
-                startActivity(intent);
+                Intent logout = new Intent(Ovono.this, LoginActivity.class);
+                startActivity(logout);
                 finish();
             }
         });

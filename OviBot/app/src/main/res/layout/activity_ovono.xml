@@ -9,38 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.rft.pti.eke.ovibot.Szulo">
 
-    <Button
-        android:text="Jelenléti ív"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_gyerekem"
-
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Étkezés"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_etkezes"
-        android:layout_below="@+id/btn_gyerekem"
-        android:layout_alignLeft="@+id/btn_gyerekem"
-        android:layout_alignStart="@+id/btn_gyerekem"
-        android:layout_marginTop="35dp"
-        android:layout_alignRight="@+id/btn_gyerekem"
-        android:layout_alignEnd="@+id/btn_gyerekem" />
-
-    <Button
-        android:text="Gyerekek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_gyerekek"
-        android:layout_below="@+id/btn_etkezes"
-        android:layout_alignLeft="@+id/btn_etkezes"
-        android:layout_alignStart="@+id/btn_etkezes"
-        android:layout_marginTop="52dp"
-        android:layout_alignRight="@+id/btn_etkezes"
-        android:layout_alignEnd="@+id/btn_etkezes" />
-
 
     <Button
         android:id="@+id/log_out_button"
@@ -51,15 +19,57 @@
         android:layout_alignParentRight="true"
         android:text="@string/action_log_out" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/greeting_textView" />
+
     <Button
-        android:text="Kollégák"
+        android:text="@string/workers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_ovonok"
-        android:layout_marginTop="35dp"
-        android:layout_below="@+id/btn_gyerekek"
-        android:layout_alignRight="@+id/btn_gyerekek"
-        android:layout_alignEnd="@+id/btn_gyerekek"
+        android:layout_above="@+id/log_out_button"
+        android:layout_marginBottom="17dp"
         android:layout_alignLeft="@+id/btn_gyerekek"
-        android:layout_alignStart="@+id/btn_gyerekek" />
+        android:layout_alignStart="@+id/btn_gyerekek"
+        android:layout_alignRight="@+id/btn_gyerekek"
+        android:layout_alignEnd="@+id/btn_gyerekek" />
+
+    <Button
+        android:text="@string/attendance_sheet"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gyerekem"
+
+        android:layout_below="@+id/greeting_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="@string/children"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gyerekek"
+        android:layout_above="@+id/btn_ovonok"
+        android:layout_alignLeft="@+id/btn_etkezes"
+        android:layout_alignStart="@+id/btn_etkezes"
+        android:layout_marginBottom="60dp"
+        android:layout_alignRight="@+id/btn_etkezes"
+        android:layout_alignEnd="@+id/btn_etkezes" />
+
+    <Button
+        android:text="@string/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_etkezes"
+        android:layout_above="@+id/btn_gyerekek"
+        android:layout_alignLeft="@+id/btn_gyerekem"
+        android:layout_alignStart="@+id/btn_gyerekem"
+        android:layout_marginBottom="63dp"
+        android:layout_toLeftOf="@+id/log_out_button"
+        android:layout_toStartOf="@+id/log_out_button" />
 </RelativeLayout>

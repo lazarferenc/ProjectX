@@ -53,11 +53,15 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Szülő vagyok"
+            android:text="@string/parent"
             android:id="@+id/cb_szulo"
             android:layout_alignTop="@+id/cb_ovono"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp" />
+            android:layout_marginTop="50dp"
+            android:layout_alignRight="@+id/cb_ovono"
+            android:layout_alignEnd="@+id/cb_ovono"
+            android:layout_alignLeft="@+id/cb_ovono"
+            android:layout_alignStart="@+id/cb_ovono"
+            />
 
         <Button
             android:id="@+id/sign_in_button"
@@ -71,11 +75,11 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Óvónő vagyok"
+            android:text="@string/kindergarten_teacher"
             android:id="@+id/cb_ovono"
+            android:layout_marginTop="23dp"
             android:layout_below="@+id/password_editText"
-            android:layout_alignLeft="@+id/cb_szulo"
-            android:layout_alignStart="@+id/cb_szulo"
-            android:layout_marginTop="23dp" />
+            android:layout_toLeftOf="@+id/sign_in_button"
+            android:layout_toStartOf="@+id/sign_in_button" />
     </RelativeLayout>
 </LinearLayout>

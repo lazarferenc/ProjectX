@@ -17,7 +17,6 @@ public class Szulo extends AppCompatActivity {
         logOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 storage.clear();
                 Intent intent = new Intent(Szulo.this, LoginActivity.class);
                 startActivity(intent);

@@ -8,4 +8,12 @@
     <string name="error_invalid_password">A jelszó túl rövid</string>
     <string name="error_invalid_email">Érvénytelen email cím</string>
     <string name="error_incorrect_password">Hibás jelszó</string>
+    <string name="parent">Szüló vagyok</string>
+    <string name="kindergarten_teacher">Óvónő vagyok</string>
+    <string name="attendance_sheet">Jelenléti ív</string>
+    <string name="menu">Étkezés</string>
+    <string name="children">Gyerekek</string>
+    <string name="workers">Kollégák</string>
+    <string name="kindergarten_teachers">Óvónők</string>
+    <string name="child">Gyermekem</string>
 </resources>
