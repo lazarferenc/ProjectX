@@ -13,33 +13,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="@string/Behavior"
-        android:ems="10"
-        android:layout_below="@+id/et_teljnev"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/et_magatartas"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" /> <!--Magatartas-->
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="@string/Morale"
-        android:ems="10"
-        android:layout_below="@+id/et_magatartas"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/et_hangulat"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" /> <!--Hangulat-->
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:hint="@string/FullName"
         android:ems="10"
         android:id="@+id/et_teljnev"
@@ -52,7 +26,35 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="text"
+        android:hint="@string/Behavior"
+        android:ems="10"
+        android:layout_below="@+id/et_teljnev"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/et_magatartas"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /> <!--Magatartas-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/Morale"
+        android:ems="10"
+        android:layout_below="@+id/et_magatartas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/et_hangulat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /> <!--Hangulat-->
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
         android:hint="@string/Presence"
         android:ems="10"
         android:layout_below="@+id/et_hangulat"
