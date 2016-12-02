@@ -13,7 +13,12 @@
     <string name="workers">Workers</string>
     <string name="kindergarten_teachers">Kindergarten Teachers</string>
     <string name="child">Child</string>
-
+    <string name="FullName">Full Name</string>
+    <string name="Behavior">Behavior</string>
+    <string name="Morale">Morale</string>
+    <string name="Presence">Presence</string>
+    <string name="Child_Up">Child Up</string>
+    <string name="Child_Show">Child Show</string>
     <string name="greeting" translatable="false">" %1$s"</string>
 
     <!-- Errors -->
@@ -21,4 +26,5 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
+
 </resources>

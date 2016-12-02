@@ -16,4 +16,10 @@
     <string name="workers">Kollégák</string>
     <string name="kindergarten_teachers">Óvónők</string>
     <string name="child">Gyermekem</string>
+    <string name="Behavior">Magatartás</string>
+    <string name="FullName">Teljes név</string>
+    <string name="Morale">Hangulat</string>
+    <string name="Presence">Jelenlét</string>
+    <string name="Child_Up">Gyerek felvitel</string>
+    <string name="Child_Show">Gyerek megjelenít</string>
 </resources>

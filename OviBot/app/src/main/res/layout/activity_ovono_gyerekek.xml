@@ -10,9 +10,85 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.rft.pti.eke.ovibot.OvonoGyerekek">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/Behavior"
+        android:ems="10"
+        android:layout_below="@+id/et_teljnev"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/et_magatartas"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /> <!--Magatartas-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/Morale"
+        android:ems="10"
+        android:layout_below="@+id/et_magatartas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/et_hangulat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /> <!--Hangulat-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/FullName"
+        android:ems="10"
+        android:id="@+id/et_teljnev"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /><!--TeljesNev-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/Presence"
+        android:ems="10"
+        android:layout_below="@+id/et_hangulat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/et_jelenlet"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /><!--Jelenlet-->
+
+    <Button
+        android:text="@string/Child_Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gyerek_fel"
+        android:layout_below="@+id/et_jelenlet"
+        android:layout_centerHorizontal="true" /><!--Gyerek_Fel-->
+
+    <Button
+        android:text="@string/Child_Show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btn_gyerek_fel"
+        android:layout_alignStart="@+id/btn_gyerek_fel"
+        android:id="@+id/btn_gyerek_megjelenit" /><!--GyerekMegjelenit-->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gyerekek"/>
+        android:layout_below="@+id/btn_gyerek_fel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv_kilistaz"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/btn_gyerek_megjelenit"
+        android:textAlignment="center" /><!--Lista-->
 
 </RelativeLayout>
