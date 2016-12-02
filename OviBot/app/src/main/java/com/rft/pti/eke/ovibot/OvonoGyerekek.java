@@ -27,7 +27,7 @@ import java.util.Map;
 
 public class OvonoGyerekek extends AppCompatActivity {
 
-    EditText TeljNev, Magatartas,Hangulat,Jelenlet;
+    EditText TeljesNev, Magatartas,Hangulat,Jelenlet;
     Button gyerekFel, gyerekMegjelenit;
     TextView lista;
     RequestQueue requestQueue;
@@ -38,11 +38,11 @@ public class OvonoGyerekek extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ovono_gyerekek);
 
-        TeljNev = (EditText) findViewById(R.id.et_teljnev);
+        TeljesNev = (EditText) findViewById(R.id.et_teljnev);
         Magatartas = (EditText) findViewById(R.id.et_magatartas);
         Hangulat = (EditText) findViewById(R.id.et_hangulat);
         Jelenlet = (EditText) findViewById(R.id.et_jelenlet);
-        gyerekFel = (Button) findViewById(R.id.btn_gyerek_megjelenit);
+        gyerekFel = (Button) findViewById(R.id.btn_gyerek_fel);
         gyerekMegjelenit = (Button) findViewById(R.id.btn_gyerek_megjelenit);
 
         lista= (TextView) findViewById(R.id.tv_kilistaz);
@@ -63,8 +63,8 @@ public class OvonoGyerekek extends AppCompatActivity {
                                 JSONObject student = students.getJSONObject(i);
 
 
-                                String TeljesNev = student.getString("TeljNev");
-                                String Magatartas = student.getString("Magatartas");
+                                String teljnev = student.getString("TeljesNev");
+                                String magatartas = student.getString("Magatartas");
                                 String Hangulat = student.getString("Hangulat");
                                 String Jelenlet = student.getString("Jelenlet");
 
@@ -78,7 +78,8 @@ public class OvonoGyerekek extends AppCompatActivity {
                     }
 
 
-                }, new Response.ErrorListener() {
+                },
+                        new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
 
@@ -87,7 +88,9 @@ public class OvonoGyerekek extends AppCompatActivity {
                 requestQueue.add(jsonObjectRequest);
 
 
-                gyerekFel.setOnClickListener(new View.OnClickListener() {
+            }
+        });
+        gyerekFel.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         StringRequest request = new StringRequest(Request.Method.POST, insertUrl, new Response.Listener<String>() {
@@ -105,7 +108,7 @@ public class OvonoGyerekek extends AppCompatActivity {
                             protected Map<String, String> getParams() throws AuthFailureError {
 
                                 Map<String, String> parameters = new HashMap<String, String>();
-                                parameters.put("TeljNev", TeljNev.getText().toString());
+                                parameters.put("TeljesNev", TeljesNev.getText().toString());
                                 parameters.put("Magatartas", Magatartas.getText().toString());
                                 parameters.put("Hangulat", Hangulat.getText().toString());
                                 parameters.put("Jelenlet", Jelenlet.getText().toString());
@@ -115,8 +118,6 @@ public class OvonoGyerekek extends AppCompatActivity {
                         requestQueue.add(request);
                     }
                 });
-            }
-        });
     }}
 
 
