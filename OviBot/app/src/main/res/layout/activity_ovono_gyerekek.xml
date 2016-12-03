@@ -79,18 +79,22 @@
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/btn_gyerek_fel"
         android:layout_alignStart="@+id/btn_gyerek_fel"
-        android:id="@+id/btn_gyerek_megjelenit" /><!--GyerekMegjelenit-->
+        android:id="@+id/btn_gyerek_megjelenit"
+        android:onClick="getJSON"/><!--GyerekMegjelenit-->
 
     <TextView
+        android:text="kilistázás helye"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_gyerek_fel"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/tv_kilistaz"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_above="@+id/btn_gyerek_megjelenit"
-        android:textAlignment="center" /><!--Lista-->
+        android:textAlignment="center"
+        android:layout_below="@+id/btn_gyerek_fel"
+        android:layout_marginTop="20dp"/><!--Lista-->
 
 </RelativeLayout>

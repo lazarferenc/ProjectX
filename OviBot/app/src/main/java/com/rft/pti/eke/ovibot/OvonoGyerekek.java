@@ -1,6 +1,7 @@
 package com.rft.pti.eke.ovibot;
 
 import android.app.DownloadManager;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -21,6 +22,14 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,7 +41,8 @@ public class OvonoGyerekek extends AppCompatActivity {
     TextView lista;
     RequestQueue requestQueue;
     String insertUrl = "http://users.ininet.hu/beadando/insertGyerekek.php";
-    String showUrl = "http://users.ininet.hu/beadando/selectGyerekek.php";
+    String JSON_STRING;
+    String showUrl = "http://users.ininet.hu/beadando/selectGyerekek.php";//php fál hibás.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +58,6 @@ public class OvonoGyerekek extends AppCompatActivity {
         lista= (TextView) findViewById(R.id.tv_kilistaz);
 
         requestQueue = Volley.newRequestQueue(getApplicationContext());
-
         gyerekMegjelenit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,13 +67,13 @@ public class OvonoGyerekek extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
                         try {
 
-                            JSONArray students = response.getJSONArray("students");
-                            for (int i = 0; i < students.length(); i++) {
-                                JSONObject student = students.getJSONObject(i);
+                            JSONArray gyerekek = response.getJSONArray("gyerekek");
+                            for (int i = 0; i < gyerekek.length(); i++) {
+                                JSONObject student = gyerekek.getJSONObject(i);
 
 
-                                String teljnev = student.getString("TeljesNev");
-                                String magatartas = student.getString("Magatartas");
+                                String TeljesNev = student.getString("TeljesNev");
+                                String Magatartas = student.getString("Magatartas");
                                 String Hangulat = student.getString("Hangulat");
                                 String Jelenlet = student.getString("Jelenlet");
 
@@ -118,7 +127,57 @@ public class OvonoGyerekek extends AppCompatActivity {
                         requestQueue.add(request);
                     }
                 });
-    }}
+    }
+    /*public void getJSON(View view)
+    {
+            new BackgroundTask().execute();
+    }
+    class BackgroundTask extends AsyncTask<Void,Void,String>
+    {
+        String json_url;
+        @Override
+        protected void onPreExecute() {
+            json_url = "https://adobe.github.io/Spry/data/json/array-02.js";
+        }
+
+        @Override
+        protected String doInBackground(Void... params) {
+            try {
+                URL url = new URL(json_url);
+                HttpURLConnection httpURLConnection =(HttpURLConnection)url.openConnection();
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                StringBuilder stringBuilder = new StringBuilder();
+                while((JSON_STRING = bufferedReader.readLine())!=null)
+                {
+                    stringBuilder.append(JSON_STRING+"\n");
+
+                }
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return stringBuilder.toString().trim();
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {
+            super.onProgressUpdate(values);
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            TextView lista= (TextView) findViewById(R.id.tv_kilistaz);
+            lista.setText(result);
+        }
+    }*/
+}
 
 
 
