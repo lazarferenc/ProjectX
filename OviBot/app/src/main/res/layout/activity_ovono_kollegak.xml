@@ -8,7 +8,7 @@
 
 
     <TextView android:id="@+id/txtTeljesNev"
-        android:layout_width="40dp"
+        android:layout_width="80dp"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
 
@@ -17,24 +17,24 @@
         android:text="TeljesNev"/><!--TeljesNev-->
 
     <TextView android:id="@+id/txtIroda"
-        android:layout_width="80dp"
+        android:layout_width="30dp"
         android:layout_height="50dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztIroda"/><!--Iroda-->
+        android:text="B-01"/><!--Iroda-->
 
     <TextView android:id="@+id/txtTelefon"
-        android:layout_width="100dp"
+        android:layout_width="90dp"
         android:layout_height="50dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztEbed"/><!--Telefon-->
+        android:text="06305220433"/><!--Telefon-->
     <TextView android:id="@+id/txtEmail"
-        android:layout_width="80dp"
+        android:layout_width="100dp"
         android:layout_height="50dp"
 
         android:layout_marginTop="50dp"

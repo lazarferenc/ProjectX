@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class Ovono extends AppCompatActivity {
 
     TextView greetingText;
-    Button logOutButton, jelenleti, etkezes, gyerekek, kollegak;
+    Button logOutButton, jelenleti, gyerekek;
 
 
     Storage storage;
@@ -31,7 +31,7 @@ public class Ovono extends AppCompatActivity {
             }
         });
 
-        jelenleti = (Button) findViewById(R.id.btn_gyerekem);
+        jelenleti = (Button) findViewById(R.id.btn_jelenleti);
         jelenleti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +62,7 @@ public class Ovono extends AppCompatActivity {
         startActivity(etkezes);
 
     }
-    public void kollegak(View view){
+    public void ovonok(View view){
         Intent kollegak = new Intent(Ovono.this,OvonoKollegak.class);
         kollegak.putExtra("delete",-1);
         startActivity(kollegak);

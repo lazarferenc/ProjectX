@@ -1,18 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_ovono_jelenleti"
+    android:id="@+id/activity_ovono_gyerekek"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.rft.pti.eke.ovibot.OvonoJelenleti">
+    tools:context="com.rft.pti.eke.ovibot.OvonoGyerekek">
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jelenléti"/>
+        android:inputType="text"
+        android:hint="@string/FullName"
+        android:ems="10"
+        android:id="@+id/et_teljnev"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /><!--TeljesNev-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/Behavior"
+        android:ems="10"
+        android:layout_below="@+id/et_teljnev"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/et_magatartas"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /> <!--Magatartas-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/Morale"
+        android:ems="10"
+        android:layout_below="@+id/et_magatartas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/et_hangulat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /> <!--Hangulat-->
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/Presence"
+        android:ems="10"
+        android:layout_below="@+id/et_hangulat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/et_jelenlet"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /><!--Jelenlet-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_below="@+id/et_jelenlet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/et_date"
+        android:layout_alignParentRight="true"
+        android:hint="@string/Date"
+        android:layout_alignParentEnd="true" /><!--Dátum-->
+
+
+    <Button
+        android:text="@string/Child_Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gyerek_fel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" /><!--Gyerek_Fel-->
+
+
+
+    <!--GyerekMegjelenit-->
+
+    <!--Lista-->
 
 </RelativeLayout>

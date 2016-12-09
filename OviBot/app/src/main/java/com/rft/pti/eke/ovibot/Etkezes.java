@@ -4,16 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.android.volley.toolbox.HttpClientStack;
 import com.rft.pti.eke.ovibot.Adapter.AdapterEtkezes;
-import com.rft.pti.eke.ovibot.Model.DetailActivity;
+import com.rft.pti.eke.ovibot.Details.DetailActivity;
 import com.rft.pti.eke.ovibot.Model.JsonModellEtkezes;
 
 import org.apache.http.HttpResponse;

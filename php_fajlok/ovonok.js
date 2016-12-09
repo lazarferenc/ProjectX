@@ -1,49 +1,49 @@
 [{
 	"id": "1",
-	"TeljesNev": "KovÃ¡cs Ilonka",
+	"TeljesNev": "Kovács Ilonka",
 	"Iroda": "B-01",
 	"Telefon": "06301526389",
-	"Email": "kovacsili@ovoda.com"
+	"Email": "kovacs.ilonka@ovoda.com"
 }, {
 	"id": "2",
-	"TeljesNev": "KovÃ¡cs ErzsÃ©bet",
+	"TeljesNev": "Kovács Erzsébet",
 	"Iroda": "B-02",
 	"Telefon": "06301526489",
-	"Email": "kovacse@ovoda.com"
+	"Email": "kovacserzsike@ovoda.com"
 }, {
 	"id": "3",
-	"TeljesNev": "FÃ¼ttyÃ¶s JolÃ¡n",
+	"TeljesNev": "Füttyös Jolán",
 	"Iroda": "B-03",
 	"Telefon": "06301526589",
-	"Email": "futtyosj@ovoda.com"
+	"Email": "futtyosjolika@ovoda.com"
 }, {
 	"id": "4",
-	"TeljesNev": "DeÃ¡ki Lili",
+	"TeljesNev": "Deáki Lili",
 	"Iroda": "B-03",
 	"Telefon": "06301526839",
-	"Email": "deakilili@ovoda.com"
+	"Email": "deaki.liliana@ovoda.com"
 }, {
 	"id": "5",
-	"TeljesNev": "PintÃ©r Ã‰va",
+	"TeljesNev": "Pintér Éva",
 	"Iroda": "B-04",
 	"Telefon": "06301526983",
-	"Email": "pinyoevi@ovoda.com"
+	"Email": "pinter.evikee@ovoda.com"
 }, {
 	"id": "6",
-	"TeljesNev": "Passa MÃ¡ria",
+	"TeljesNev": "Passa Mária",
 	"Iroda": "B-05",
 	"Telefon": "06301526004",
-	"Email": "passamari@ovoda.com"
+	"Email": "passa.marikaa@ovoda.com"
 }, {
 	"id": "7",
-	"TeljesNev": "Verderber JÃºlia",
+	"TeljesNev": "Verderber Júlia",
 	"Iroda": "B-06",
 	"Telefon": "06301526001",
-	"Email": "verderj@ovoda.com"
+	"Email": "verderberjuli@ovoda.com"
 }, {
 	"id": "8",
-	"TeljesNev": "Kis Piroska",
+	"TeljesNev": "Kiss Piroska",
 	"Iroda": "B-02",
 	"Telefon": "06301526567",
-	"Email": "kispiri@ovoda.com"
+	"Email": "kiss.piroskaa@ovoda.com"
 }]
