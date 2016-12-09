@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 	include 'connect.php';
@@ -18,7 +18,7 @@ function selectEtkezes()
 			
 		}
 	}
-	header('Content-Type: application/json;charset=utf-8');
+	header('Content-Type: application/json;');
 	echo json_encode(array("etkezes"=>$temp_array));
 	mysqli_close($con);
 	

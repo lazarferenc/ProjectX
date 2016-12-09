@@ -42,14 +42,6 @@ public class Ovono extends AppCompatActivity {
 
         });
 
-        etkezes = (Button) findViewById(R.id.btn_etkezes);
-        etkezes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent etkezes = new Intent(Ovono.this, Etkezes.class);
-                startActivity(etkezes);
-            }
-        });
 
         gyerekek = (Button) findViewById(R.id.btn_gyerekek);
         gyerekek.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +64,12 @@ public class Ovono extends AppCompatActivity {
         storage = new Storage(this);
         String userName = storage.getName();
         //greetingText.setText(getString(R.string.greeting, userName));
+    }
+    public void etkezes(View view){
+        Intent etkezes = new Intent(Ovono.this,Etkezes.class);
+        etkezes.putExtra("delete", -1);
+        startActivity(etkezes);
+
     }
 
 
