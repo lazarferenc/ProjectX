@@ -8,99 +8,41 @@
 
 
     <TextView android:id="@+id/txtDatum"
-        android:layout_width="wrap_content"
-        android:layout_height="27dp"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
         android:layout_marginTop="50dp"
 
 
         android:layout_marginBottom="5dp"
-        android:text="TesztDatum"/><!--TeljesNev-->
+        android:text="2016-12-05"/><!--Datum-->
 
     <TextView android:id="@+id/txtReggeli"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-<<<<<<< HEAD
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztReggeli"/><!--Magatartas-->
+        android:text="TesztReggeli"/><!--Reggeli-->
 
     <TextView android:id="@+id/txtEbed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztEbed"/><!--Hangulat-->
+        android:text="TesztEbed"/><!--Ebed-->
     <TextView android:id="@+id/txtUzsonna"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
 
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztUzsonna"/> <!--Jelenlet-->
-=======
-        android:text="Menü"
-        android:id="@+id/textView"
-        android:textSize="20dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textAlignment="center"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dátum"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20dp"
-        android:id="@+id/textView3" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reggeli"
-        android:textSize="20dp"
-        android:id="@+id/textView2"
-        android:layout_marginLeft="29dp"
-        android:layout_marginStart="29dp"
-        android:layout_below="@+id/textView"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ebéd"
-        android:textSize="20dp"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_toEndOf="@+id/textView2"
-        android:layout_marginLeft="29dp"
-        android:layout_marginStart="29dp"
-        android:id="@+id/textView4" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Uzsonna"
-        android:textSize="20dp"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
-        android:id="@+id/textView5" />
+        android:text="TesztUzsonna"/> <!--Uzsonna-->
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/textView5"
-        android:layout_alignEnd="@+id/textView5"
-        ></TableRow>
->>>>>>> origin/master
+
+
 
 
 </LinearLayout>
