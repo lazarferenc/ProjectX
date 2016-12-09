@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_ovono_kollegak"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.rft.pti.eke.ovibot.OvonoKollegak">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kollégák"/>
 
-</RelativeLayout>
+    <TextView android:id="@+id/txtTeljesNev"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+
+
+        android:layout_marginBottom="5dp"
+        android:text="TeljesNev"/><!--TeljesNev-->
+
+    <TextView android:id="@+id/txtIroda"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="TesztIroda"/><!--Iroda-->
+
+    <TextView android:id="@+id/txtTelefon"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="TesztEbed"/><!--Telefon-->
+    <TextView android:id="@+id/txtEmail"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="TesztUzsonna"/> <!--Email-->
+
+
+
+
+
+</LinearLayout>

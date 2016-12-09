@@ -40,8 +40,7 @@ public class OvonoGyerekek extends AppCompatActivity {
     Button gyerekFel;
     RequestQueue requestQueue;
     String insertUrl = "http://users.ininet.hu/beadando/insertGyerekek.php";
-    //String JSON_STRING;
-    //String showUrl = "http://users.ininet.hu/beadando/selectGyerekek.php";//php fál hibás.
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,8 +52,6 @@ public class OvonoGyerekek extends AppCompatActivity {
         Jelenlet = (EditText) findViewById(R.id.et_jelenlet);
         Datum = (EditText) findViewById(R.id.et_date);
         gyerekFel = (Button) findViewById(R.id.btn_gyerek_fel);
-
-
 
         requestQueue = Volley.newRequestQueue(getApplicationContext());
         gyerekFel.setOnClickListener(new View.OnClickListener() {

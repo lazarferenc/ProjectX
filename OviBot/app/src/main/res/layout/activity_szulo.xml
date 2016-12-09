@@ -40,7 +40,9 @@ tools:context="com.rft.pti.eke.ovibot.Szulo">
         android:layout_alignLeft="@+id/btn_gyerekem"
         android:layout_alignStart="@+id/btn_gyerekem"
         android:layout_alignRight="@+id/btn_gyerekem"
-        android:layout_alignEnd="@+id/btn_gyerekem" />
+        android:layout_alignEnd="@+id/btn_gyerekem"
+        android:onClick="etkezes"/>
+
 
     <Button
         android:id="@+id/log_out_button"
