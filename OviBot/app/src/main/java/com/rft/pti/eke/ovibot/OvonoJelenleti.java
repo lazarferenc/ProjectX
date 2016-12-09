@@ -27,7 +27,7 @@ public class OvonoJelenleti extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ovono_gyerekek);
+        setContentView(R.layout.activity_ovono_jelenleti);
 
         TeljesNev = (EditText) findViewById(R.id.et_teljnev);
         Magatartas = (EditText) findViewById(R.id.et_magatartas);

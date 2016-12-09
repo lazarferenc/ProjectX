@@ -1,12 +1,17 @@
 package com.rft.pti.eke.ovibot;
 
 import android.app.DownloadManager;
+import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
@@ -17,7 +22,15 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.rft.pti.eke.ovibot.Adapter.AdapterGyerekek;
+import com.rft.pti.eke.ovibot.Details.DetailActivityGyerekek;
+import com.rft.pti.eke.ovibot.Model.JsonModellGyerekek;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -30,59 +43,119 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 
 public class OvonoGyerekek extends AppCompatActivity {
 
-    EditText TeljesNev, Magatartas,Hangulat,Jelenlet,Datum;
-    Button gyerekFel;
-    RequestQueue requestQueue;
-    String insertUrl = "http://users.ininet.hu/beadando/insertGyerekek.php";
+    ArrayList<String> TeljesNev_array = new ArrayList<String>();
+    ArrayList<String> Magatartas_array = new ArrayList<String>();
+    ArrayList<String> Hangulat_array = new ArrayList<String>();
+    ArrayList<String> Jelenlet_array = new ArrayList<String>();
+    ArrayList<String> Datum_array = new ArrayList<String>();
+    ArrayList<JsonModellGyerekek> json_array = new ArrayList<JsonModellGyerekek>();
+    ListView list;
+    AdapterGyerekek adapter2;
+    Context cont =  this;
+    int deleteIndex = -1;
+    private static String URL = "http://users.ininet.hu/beadando/gyerekekJson.js";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Bundle bundle = getIntent().getExtras();
+        deleteIndex = bundle.getInt("delete");
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ovono_gyerekek);
+        setContentView(R.layout.list_layout);
+        new TheTask().execute();
+    }
+    class TheTask extends AsyncTask<Void,Void,String> {
 
-        TeljesNev = (EditText) findViewById(R.id.et_teljnev);
-        Magatartas = (EditText) findViewById(R.id.et_magatartas);
-        Hangulat = (EditText) findViewById(R.id.et_hangulat);
-        Jelenlet = (EditText) findViewById(R.id.et_jelenlet);
-        Datum = (EditText) findViewById(R.id.et_date);
-        gyerekFel = (Button) findViewById(R.id.btn_gyerek_fel);
+        @Override
+        protected String doInBackground(Void... params) {
+            String str = null;
+            try {
+                HttpClient httpclient = new DefaultHttpClient();
+                HttpPost httppost = new HttpPost(URL);
+                HttpResponse response = httpclient.execute(httppost);
+                str = EntityUtils.toString(response.getEntity());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
-        requestQueue = Volley.newRequestQueue(getApplicationContext());
-        gyerekFel.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        StringRequest request = new StringRequest(Request.Method.POST, insertUrl, new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
+            return str;
 
-                            }
-                        }, new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error) {
+        }
 
-                            }
-                        }) {
-                            @Override
-                            protected Map<String, String> getParams() throws AuthFailureError {
 
-                                Map<String, String> parameters = new HashMap<String, String>();
-                                parameters.put("TeljesNev", TeljesNev.getText().toString());
-                                parameters.put("Magatartas", Magatartas.getText().toString());
-                                parameters.put("Hangulat", Hangulat.getText().toString());
-                                parameters.put("Jelenlet", Jelenlet.getText().toString());
-                                parameters.put("Datum", Datum.getText().toString());
-                                return parameters;
-                            }
-                        };
-                        requestQueue.add(request);
+
+        @Override
+        protected void onPostExecute(String result) {
+
+            super.onPostExecute(result);
+
+            String response = result.toString();
+            try {
+
+
+                JSONArray new_array = new JSONArray(response);
+
+                for (int i = 0, count = new_array.length(); i < count; i++) {
+                    try {
+                        JSONObject jsonObject = new_array.getJSONObject(i);
+                        TeljesNev_array.add(jsonObject.getString("TeljesNev").toString());
+                        Magatartas_array.add(jsonObject.getString("Magatartas").toString());
+                        Hangulat_array.add(jsonObject.getString("Hangulat").toString());
+                        Jelenlet_array.add(jsonObject.getString("Jelenlet").toString());
+                        Datum_array.add(jsonObject.getString("Datum").toString());
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
                     }
-                });
+                }
+
+                for (int i = 0; i < TeljesNev_array.size(); i++) {
+                    json_array.add(i, new JsonModellGyerekek(TeljesNev_array.get(i), Magatartas_array.get(i), Hangulat_array.get(i), Jelenlet_array.get(i), Datum_array.get(i)));
+                }
+
+                if(deleteIndex >= 0){
+                    Log.d("INDEX:",Integer.toString(deleteIndex));
+                    json_array.remove(deleteIndex);
+                }
+
+
+                adapter2 = new AdapterGyerekek(cont,R.layout.activity_ovono_gyerekek,json_array);
+                list =  (ListView) findViewById(R.id.list);
+
+
+                list.setAdapter(adapter2);
+
+                AdapterView.OnItemClickListener onItemClickListener = new AdapterView.OnItemClickListener() {
+
+                    @Override
+                    public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+                        JsonModellGyerekek data = json_array.get(arg2);
+                        Intent i = new Intent(cont, DetailActivityGyerekek.class);
+                        /*Szintén a modelben a getteről levenni a kommentet*/
+                        i.putExtra("TeljesNev", data.getTeljesNev());
+                        i.putExtra("Magatartas",data.getMagatartas());
+                        i.putExtra("Hangulat", data.getHangulat());
+                        i.putExtra("Jelenlet", data.getJelenlet());
+                        i.putExtra("Datum", data.getDatum());
+                        i.putExtra("index", arg2);
+                        startActivity(i);
+                        finish();
+                    }
+                };
+                list.setOnItemClickListener(onItemClickListener);
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 
 }
