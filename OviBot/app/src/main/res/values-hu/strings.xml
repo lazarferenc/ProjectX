@@ -22,4 +22,6 @@
     <string name="Presence">Jelenlét</string>
     <string name="Child_Up">Gyerek felvitel</string>
     <string name="Child_Show">Gyerek megjelenít</string>
+    <string name="Date">Dátum</string>
+    <string name="childrenUp">Gyerekfelvitel</string>
 </resources>

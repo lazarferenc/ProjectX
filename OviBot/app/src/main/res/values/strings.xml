@@ -9,7 +9,7 @@
     <string name="kindergarten_teacher">Kindergarten Teacher</string>
     <string name="attendance_sheet">Attendance Sheet</string>
     <string name="menu">Menu</string>
-    <string name="children">Children</string>
+    <string name="childrenUp">ChildrenUp</string>
     <string name="workers">Workers</string>
     <string name="kindergarten_teachers">Kindergarten Teachers</string>
     <string name="child">Child</string>
@@ -19,6 +19,7 @@
     <string name="Presence">Presence</string>
     <string name="Child_Up">Child Up</string>
     <string name="Child_Show">Child Show</string>
+    <string name="Date">Date</string>
     <string name="greeting" translatable="false">" %1$s"</string>
 
     <!-- Errors -->
@@ -26,5 +27,6 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
+    <string name="children">ChildrenShow</string>
 
 </resources>

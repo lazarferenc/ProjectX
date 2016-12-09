@@ -24,14 +24,7 @@ public class Szulo extends AppCompatActivity {
             }
         });
 
-        etkezes = (Button) findViewById(R.id.btn_etkezes);
-        etkezes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent etkezes = new Intent(Szulo.this,Etkezes.class);
-                startActivity(etkezes);
-            }
-        });
+
         gyerekem = (Button) findViewById(R.id.btn_gyerekem);
         gyerekem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,5 +42,12 @@ public class Szulo extends AppCompatActivity {
                 startActivity(ovonok);
             }
         });
+
+    }
+    public void etkezes(View view){
+        Intent etkezes = new Intent(Szulo.this,Etkezes.class);
+        etkezes.putExtra("delete", -1);
+        startActivity(etkezes);
+
     }
 }

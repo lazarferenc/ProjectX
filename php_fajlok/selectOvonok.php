@@ -2,12 +2,12 @@
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 	include 'connect.php';
-	selectEtkezes();
+	selectOvonok();
 }
-function selectEtkezes()
+function selectOvonok()
 {
 	global $con;
-	$query = "Select * From etkezes; ";
+	$query = "Select * From ovonok; ";
 	$result = mysqli_query($con,$query);
 	$number_of_rows = mysqli_num_rows($result);
 	$temp_array = array();
@@ -19,7 +19,7 @@ function selectEtkezes()
 		}
 	}
 	header('Content-Type: application/json;');
-	echo json_encode(array("etkezes"=>$temp_array));
+	echo json_encode(array("ovonok"=>$temp_array));
 	mysqli_close($con);
 	
 }

@@ -39,6 +39,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Etkezes"
+            android:label="@string/menu"
             android:screenOrientation="portrait" />
         <activity
             android:name=".OvonoGyerekek"

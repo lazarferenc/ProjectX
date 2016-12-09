@@ -37,20 +37,11 @@
         android:layout_alignLeft="@+id/btn_gyerekek"
         android:layout_alignStart="@+id/btn_gyerekek"
         android:layout_alignRight="@+id/btn_gyerekek"
-        android:layout_alignEnd="@+id/btn_gyerekek" />
+        android:layout_alignEnd="@+id/btn_gyerekek"
+        android:onClick="ovonok"/>
 
     <Button
-        android:text="@string/attendance_sheet"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_gyerekem"
-
-        android:layout_below="@+id/greeting_textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
-
-    <Button
-        android:text="@string/children"
+        android:text="@string/childrenUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_gyerekek"
@@ -66,10 +57,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_etkezes"
-        android:layout_above="@+id/btn_gyerekek"
+        android:layout_below="@+id/btn_gyerekem"
         android:layout_alignLeft="@+id/btn_gyerekem"
         android:layout_alignStart="@+id/btn_gyerekem"
-        android:layout_marginBottom="63dp"
+        android:layout_marginTop="31dp"
+        android:layout_alignRight="@+id/btn_gyerekem"
+        android:layout_alignEnd="@+id/btn_gyerekem"
+        android:onClick="etkezes"/>
+
+    <Button
+        android:text="@string/children"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gyerek_megjelenit"
+        android:layout_above="@+id/btn_gyerekek"
+        android:layout_marginBottom="18dp"
+        android:layout_toLeftOf="@+id/log_out_button"
+        android:layout_alignLeft="@+id/btn_gyerekek"
+        android:layout_alignStart="@+id/btn_gyerekek" />
+
+    <Button
+        android:text="@string/attendance_sheet"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gyerekem"
+
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/greeting_textView"
         android:layout_toLeftOf="@+id/log_out_button"
         android:layout_toStartOf="@+id/log_out_button" />
 </RelativeLayout>
