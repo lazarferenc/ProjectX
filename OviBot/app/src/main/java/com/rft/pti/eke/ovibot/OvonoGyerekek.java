@@ -139,12 +139,12 @@ public class OvonoGyerekek extends AppCompatActivity {
                         JsonModellGyerekek data = json_array.get(arg2);
                         Intent i = new Intent(cont, DetailActivityGyerekek.class);
                         /*Szintén a modelben a getteről levenni a kommentet*/
-                        i.putExtra("TeljesNev", data.getTeljesNev());
+                        /*i.putExtra("TeljesNev", data.getTeljesNev());
                         i.putExtra("Magatartas",data.getMagatartas());
                         i.putExtra("Hangulat", data.getHangulat());
                         i.putExtra("Jelenlet", data.getJelenlet());
                         i.putExtra("Datum", data.getDatum());
-                        i.putExtra("index", arg2);
+                        i.putExtra("index", arg2);*/
                         startActivity(i);
                         finish();
                     }
