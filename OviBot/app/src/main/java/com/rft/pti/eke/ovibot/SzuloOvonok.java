@@ -39,4 +39,14 @@ public class SzuloOvonok extends Activity {
     Context cont =  this;
     int deleteIndex = -1;
     private static String URL = "http://users.ininet.hu/beadando/ovonok.js";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        Bundle bundle = getIntent().getExtras();
+        deleteIndex = bundle.getInt("delete");
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.list_layout);
+        new TheTask().execute();
+    }
 }
