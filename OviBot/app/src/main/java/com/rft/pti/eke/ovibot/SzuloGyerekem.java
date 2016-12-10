@@ -39,5 +39,32 @@ public class SzuloGyerekem extends AppCompatActivity {
     int deleteIndex = -1;
     private static String URL = "http://users.ininet.hu/beadando/gyerekekJson.js";
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        Bundle bundle = getIntent().getExtras();
+        deleteIndex = bundle.getInt("delete");
 
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.list_layout);
+        new TheTask().execute();
+    }
+
+    class TheTask extends AsyncTask<Void,Void,String> {
+
+        @Override
+        protected String doInBackground(Void... params) {
+            String str = null;
+            try {
+                HttpClient httpclient = new DefaultHttpClient();
+                HttpPost httppost = new HttpPost(URL);
+                HttpResponse response = httpclient.execute(httppost);
+                str = EntityUtils.toString(response.getEntity());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            return str;
+
+        }
+    }
 }
