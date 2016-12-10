@@ -41,6 +41,16 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
         android:text="06305220433"/>
-    
+
+
+
+    <!--Email-->
+
+    <TextView android:id="@+id/txtEmail"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="TesztUzsonna"/> 
 
 </LinearLayout>
