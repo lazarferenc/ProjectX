@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Szulo extends AppCompatActivity {
-    Button logOutButton, etkezes, gyerekem, ovonok;
+    Button logOutButton;
     Storage storage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,29 +25,23 @@ public class Szulo extends AppCompatActivity {
         });
 
 
-        gyerekem = (Button) findViewById(R.id.btn_gyerekem);
-        gyerekem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent gyerekem = new Intent(Szulo.this,SzuloGyerekem.class);
-                startActivity(gyerekem);
-
-            }
-        });
-        ovonok = (Button) findViewById(R.id.btn_ovonok);
-        ovonok.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent ovonok = new Intent(Szulo.this,SzuloOvonok.class);
-                startActivity(ovonok);
-            }
-        });
-
     }
     public void etkezes(View view){
         Intent etkezes = new Intent(Szulo.this,Etkezes.class);
         etkezes.putExtra("delete", -1);
         startActivity(etkezes);
+
+    }
+    public void ovonok(View view){
+        Intent ovonok = new Intent(Szulo.this,SzuloOvonok.class);
+        ovonok.putExtra("delete",-1);
+        startActivity(ovonok);
+
+    }
+    public void gyerekek(View view){
+        Intent gyerekek = new Intent(Szulo.this,SzuloGyerekem.class);
+        gyerekek.putExtra("delete",-1);
+        startActivity(gyerekek);
 
     }
 }

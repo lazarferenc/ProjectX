@@ -14,7 +14,7 @@ public class JsonModellGyerekek {
 
     /*Getterek*/
 
-/*     public String getTeljesNev() {
+     public String getTeljesNev() {
         return TeljesNev;
     }
 
@@ -32,7 +32,7 @@ public class JsonModellGyerekek {
 
     public String getDatum() {
         return Datum;
-    }*/
+    }
 
 
 

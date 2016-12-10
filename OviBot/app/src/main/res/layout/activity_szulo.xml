@@ -17,19 +17,18 @@ tools:context="com.rft.pti.eke.ovibot.Szulo">
     android:layout_centerVertical="true"
     android:layout_alignLeft="@+id/btn_etkezes"
     android:layout_alignStart="@+id/btn_etkezes"
-        android:layout_alignRight="@+id/btn_gyerekem"
-        android:layout_alignEnd="@+id/btn_gyerekem" />
-
+    android:layout_alignRight="@+id/btn_gyerekem"
+    android:layout_alignEnd="@+id/btn_gyerekem"
+        android:onClick="ovonok"/><!--Óvónők-->
     <Button
         android:text="@string/child"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:id="@+id/btn_gyerekem"
-
+        android:onClick="gyerekek"
         android:layout_above="@+id/btn_ovonok"
         android:layout_marginBottom="47dp"
-        android:layout_toLeftOf="@+id/log_out_button" />
-
+        android:layout_toLeftOf="@+id/log_out_button" /><!--Gyerekek-->
     <Button
     android:text="@string/menu"
     android:layout_width="wrap_content"
@@ -41,9 +40,7 @@ tools:context="com.rft.pti.eke.ovibot.Szulo">
         android:layout_alignStart="@+id/btn_gyerekem"
         android:layout_alignRight="@+id/btn_gyerekem"
         android:layout_alignEnd="@+id/btn_gyerekem"
-        android:onClick="etkezes"/>
-
-
+        android:onClick="etkezes"/><!--Étkezés-->
     <Button
         android:id="@+id/log_out_button"
         android:layout_width="wrap_content"
@@ -51,5 +48,5 @@ tools:context="com.rft.pti.eke.ovibot.Szulo">
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:text="@string/action_log_out" />
+        android:text="@string/action_log_out" /><!--Kilépés-->
 </RelativeLayout>
