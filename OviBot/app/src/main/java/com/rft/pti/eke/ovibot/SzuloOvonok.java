@@ -49,4 +49,23 @@ public class SzuloOvonok extends Activity {
         setContentView(R.layout.list_layout);
         new TheTask().execute();
     }
+
+    class TheTask extends AsyncTask<Void,Void,String> {
+
+        @Override
+        protected String doInBackground(Void... params) {
+            String str = null;
+            try {
+                HttpClient httpclient = new DefaultHttpClient();
+                HttpPost httppost = new HttpPost(URL);
+                HttpResponse response = httpclient.execute(httppost);
+                str = EntityUtils.toString(response.getEntity());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            return str;
+
+        }
+    }
 }
