@@ -74,7 +74,102 @@ public class SzuloGyerekem extends AppCompatActivity {
 
             String response = result.toString();
 
+            try {
 
+
+                JSONArray new_array = new JSONArray(response);
+
+                for (int i = 0, count = new_array.length(); i < count; i++) {
+                    try {
+                        JSONObject jsonObject = new_array.getJSONObject(i);
+                        TeljesNev_array.add(jsonObject.getString("TeljesNev").toString());
+                        Magatartas_array.add(jsonObject.getString("Magatartas").toString());
+                        Hangulat_array.add(jsonObject.getString("Hangulat").toString());
+                        Jelenlet_array.add(jsonObject.getString("Jelenlet").toString());
+                        Datum_array.add(jsonObject.getString("Datum").toString());
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                try {
+
+
+                    JSONArray new_array = new JSONArray(response);
+
+                    for (int i = 0, count = new_array.length(); i < count; i++) {
+                        try {
+                            JSONObject jsonObject = new_array.getJSONObject(i);
+                            TeljesNev_array.add(jsonObject.getString("TeljesNev").toString());
+                            Magatartas_array.add(jsonObject.getString("Magatartas").toString());
+                            Hangulat_array.add(jsonObject.getString("Hangulat").toString());
+                            Jelenlet_array.add(jsonObject.getString("Jelenlet").toString());
+                            Datum_array.add(jsonObject.getString("Datum").toString());
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                   
+                    adapter2 = new AdapterGyerekek(cont,R.layout.activity_szulo_gyerekem,json_array);
+                    list =  (ListView) findViewById(R.id.list);
+
+
+                    list.setAdapter(adapter2);
+
+                    AdapterView.OnItemClickListener onItemClickListener = new AdapterView.OnItemClickListener() {
+
+                        @Override
+                        public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+                            JsonModellGyerekek data = json_array.get(arg2);
+                            Intent i = new Intent(cont, DetailActivityGyerekek.class);
+                        /*Szintén a modelben a getteről levenni a kommentet*/
+                            i.putExtra("TeljesNev", data.getTeljesNev());
+                            i.putExtra("Magatartas",data.getMagatartas());
+                            i.putExtra("Hangulat", data.getHangulat());
+                            i.putExtra("Jelenlet", data.getJelenlet());
+                            i.putExtra("Datum", data.getDatum());
+                            i.putExtra("index", arg2);
+                            startActivity(i);
+                            finish();
+                        }
+                    };
+                    list.setOnItemClickListener(onItemClickListener);
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+                adapter2 = new AdapterGyerekek(cont,R.layout.activity_szulo_gyerekem,json_array);
+                list =  (ListView) findViewById(R.id.list);
+
+
+                list.setAdapter(adapter2);
+
+                AdapterView.OnItemClickListener onItemClickListener = new AdapterView.OnItemClickListener() {
+
+                    @Override
+                    public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+                        JsonModellGyerekek data = json_array.get(arg2);
+                        Intent i = new Intent(cont, DetailActivityGyerekek.class);
+                        /*Szintén a modelben a getteről levenni a kommentet*/
+                        i.putExtra("TeljesNev", data.getTeljesNev());
+                        i.putExtra("Magatartas",data.getMagatartas());
+                        i.putExtra("Hangulat", data.getHangulat());
+                        i.putExtra("Jelenlet", data.getJelenlet());
+                        i.putExtra("Datum", data.getDatum());
+                        i.putExtra("index", arg2);
+                        startActivity(i);
+                        finish();
+                    }
+                };
+                list.setOnItemClickListener(onItemClickListener);
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
