@@ -28,5 +28,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class SzuloOvonok extends Activity {
+    ArrayList<String> TeljesNev_array = new ArrayList<String>();
+    ArrayList<String> Iroda_array = new ArrayList<String>();
+    ArrayList<String> Telefon_array = new ArrayList<String>();
+    ArrayList<String> Email_array = new ArrayList<String>();
 
+    ArrayList<JsonModellKollegak> json_array = new ArrayList<JsonModellKollegak>();
+    ListView list_kollegak;
+    AdapterKollegak adapterkollegak;
+    Context cont =  this;
+    int deleteIndex = -1;
+    private static String URL = "http://users.ininet.hu/beadando/ovonok.js";
 }
