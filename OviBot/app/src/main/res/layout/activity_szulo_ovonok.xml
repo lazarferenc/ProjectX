@@ -7,10 +7,16 @@
     android:padding="10dp">
 
 
+    <!--TeljesNev-->
+
+    <TextView android:id="@+id/txtTeljesNev"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="TeljesNev"/>
 
 
-
-
-
+    
 
 </LinearLayout>
