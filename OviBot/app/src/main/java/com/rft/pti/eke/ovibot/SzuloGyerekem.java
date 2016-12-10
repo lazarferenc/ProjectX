@@ -27,6 +27,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class SzuloGyerekem extends AppCompatActivity {
+    ArrayList<String> TeljesNev_array = new ArrayList<String>();
+    ArrayList<String> Magatartas_array = new ArrayList<String>();
+    ArrayList<String> Hangulat_array = new ArrayList<String>();
+    ArrayList<String> Jelenlet_array = new ArrayList<String>();
+    ArrayList<String> Datum_array = new ArrayList<String>();
+    ArrayList<JsonModellGyerekek> json_array = new ArrayList<JsonModellGyerekek>();
+    ListView list;
+    AdapterGyerekek adapter2;
+    Context cont =  this;
+    int deleteIndex = -1;
+    private static String URL = "http://users.ininet.hu/beadando/gyerekekJson.js";
 
 
 }
