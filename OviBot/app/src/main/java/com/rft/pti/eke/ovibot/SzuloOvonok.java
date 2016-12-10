@@ -96,18 +96,42 @@ public class SzuloOvonok extends Activity {
                     }
                 }
 
+                for (int i = 0; i < TeljesNev_array.size(); i++) {
+                    json_array.add(i, new JsonModellKollegak(TeljesNev_array.get(i), Iroda_array.get(i), Telefon_array.get(i), Email_array.get(i)));
+                }
+
+                if(deleteIndex >= 0){
+                    Log.d("INDEX:",Integer.toString(deleteIndex));
+                    json_array.remove(deleteIndex);
+                }
+
+                //kollégák adapter
+                adapterkollegak = new AdapterKollegak(cont,R.layout.activity_szulo_ovonok,json_array);
+                list_kollegak =  (ListView) findViewById(R.id.list);
+
+                //kollégák lista
+                list_kollegak.setAdapter(adapterkollegak);
+
+
                 AdapterView.OnItemClickListener onItemClickListener = new AdapterView.OnItemClickListener() {
 
                     @Override
                     public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-                        /*
-                        putExtra
-                        teljes név
-                        iroda
-                        telefon
-                        email
-                        startactivity()
-                         */
+                        //adatok
+                        JsonModellKollegak data = json_array.get(arg2);
+                        Intent i = new Intent(cont, DetailActivityKollegak.class);
+                        //teljes név
+                        i.putExtra("TeljesNev", data.getTeljesNev());
+                        //iroda
+                        i.putExtra("Iroda",data.getIroda());
+                        //telefon
+                        i.putExtra("Telefon", data.getTelefon());
+                        //email
+                        i.putExtra("Email", data.getEmail());
+                        i.putExtra("index", arg2);
+
+                        startActivity(i);
+                        finish();
                     }
                 };
             } catch (JSONException e) {
