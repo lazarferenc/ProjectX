@@ -67,5 +67,29 @@ public class SzuloOvonok extends Activity {
             return str;
 
         }
+
+        @Override
+        protected void onPostExecute(String result) {
+
+            super.onPostExecute(result);
+
+            String response = result.toString();
+            try {
+
+
+                JSONArray new_array = new JSONArray(response);
+                /*
+                (JSON)
+                Teljes név
+                Iroda
+                Email
+                 */
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 }
