@@ -76,20 +76,30 @@ public class SzuloOvonok extends Activity {
             String response = result.toString();
             try {
 
-
                 JSONArray new_array = new JSONArray(response);
-                /*
-                (JSON)
-                Teljes név
-                Iroda
-                Email
-                 */
 
+                for (int i = 0, count = new_array.length(); i < count; i++) {
+                    try {
+                        //JSON
+                        JSONObject jsonObject = new_array.getJSONObject(i);
+                        //Teljes név
+                        TeljesNev_array.add(jsonObject.getString("TeljesNev").toString());
+                        //Iroda
+                        Iroda_array.add(jsonObject.getString("Iroda").toString());
+                        //Telefon
+                        Telefon_array.add(jsonObject.getString("Telefon").toString());
+                        //Email
+                        Email_array.add(jsonObject.getString("Email").toString());
 
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
         }
     }
 }
