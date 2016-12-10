@@ -66,5 +66,15 @@ public class SzuloGyerekem extends AppCompatActivity {
             return str;
 
         }
+
+        @Override
+        protected void onPostExecute(String result) {
+
+            super.onPostExecute(result);
+
+            String response = result.toString();
+
+
+        }
     }
 }
