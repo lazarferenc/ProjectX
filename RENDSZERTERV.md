@@ -161,7 +161,7 @@
 	
 ###9) Adatbázis terv
 	- Logikai adatmodell
-	- Tárolt eljárások
+		- Az alábbi linken megtekinthető a következő tervezet: http://mdy88p.axshare.com/#g=1&p=ovoda
 	- Fizikai adatmodellt legeneráló SQL szkript
 	
 ###10) Implementációs terv
@@ -170,6 +170,10 @@
 	- Kliensoldal osztályai
 
 ###11) Tesztterv
+	- A tesztelési folyamatot külső mobileszközzel (Samsung Galaxy Advance) végeztük.
+	- A teszt projekt futása során hiba nem lépett fel, az elvártak szerint teljesült.
+	- Dokumentáció részletszerűen nem készült, hiszen hiba hiányában nem volt rá igény.
+	- A teszt-folyamat sikeresen lezajlott/lezárult. Készen áll az 1.0-ás verzió az átadásra.
 
 ###12) Telepítési terv
 
