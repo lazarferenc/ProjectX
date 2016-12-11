@@ -15,7 +15,8 @@
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TeljesNev"/>
+        android:text="TeljesNev"
+        android:textColor="#FFFFF0" />
 
 
 
@@ -28,7 +29,8 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="B-01"/>
+        android:text="B-01"
+        android:textColor="#FFFFF0" />
 
 
 
