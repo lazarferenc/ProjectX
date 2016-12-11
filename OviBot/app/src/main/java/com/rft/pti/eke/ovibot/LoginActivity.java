@@ -14,7 +14,10 @@ import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
     private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "test@test.com:test123"
+            "test@test.com:test123",
+            "demeter.adam@rft.hu:project",
+            "lazar.ferenc@frt.hu:project",
+            "timar.bence@rft.hu:project"
     };
 
     private View loginFormView;
