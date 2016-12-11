@@ -163,6 +163,7 @@
 	- Logikai adatmodell
 		- Az alábbi linken megtekinthető a következő tervezet: http://mdy88p.axshare.com/#g=1&p=ovoda
 	- Fizikai adatmodellt legeneráló SQL szkript
+		- Külön fájlban megtalálható. (github repo/SQL)
 	
 ###10) Implementációs terv
 	- Perzisztencia-osztályok
