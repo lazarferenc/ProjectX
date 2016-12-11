@@ -17,7 +17,8 @@
 
         android:layout_marginBottom="5dp"
         android:text="2016-12-05"
-        android:textColor="#FFFFF0" /><!--Datum-->
+        android:textColor="#FFFFF0"
+        android:textColorLink="#FFFACD" /><!--Datum-->
 
     <TextView android:id="@+id/txtReggeli"
         android:layout_width="80dp"
@@ -38,7 +39,8 @@
         android:layout_marginBottom="5dp"
         android:text="TesztEbed"
         android:textColorLink="#FFFFF0"
-        android:textColor="#FFFFF0" /><!--Ebed-->
+        android:textColor="#FFFFF0"
+        android:textAllCaps="false" /><!--Ebed-->
     <TextView android:id="@+id/txtUzsonna"
         android:layout_width="80dp"
         android:layout_height="50dp"
