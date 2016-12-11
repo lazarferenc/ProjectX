@@ -4,14 +4,16 @@
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#008080">
 
     <TextView android:id="@+id/txtTeljesNev"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztNev"/><!--TeljesNev-->
+        android:text="TesztNev"
+        android:textColor="#FFFFF0" /><!--TeljesNev-->
 
     <TextView android:id="@+id/txtMagatartas"
         android:layout_width="50dp"
@@ -20,7 +22,8 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztM"/><!--Magatartas-->
+        android:text="TesztM"
+        android:textColor="#FFFFF0" /><!--Magatartas-->
 
     <TextView android:id="@+id/txtHangulat"
         android:layout_width="50dp"
@@ -29,20 +32,23 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztHangulat"/><!--Hangulat-->
+        android:text="TesztHangulat"
+        android:textColor="#FFFFF0" /><!--Hangulat-->
 
     <TextView android:id="@+id/txtJelenlet"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztJelenlet"/><!--Jelenlet-->
+        android:text="TesztJelenlet"
+        android:textColor="#FFFFF0" /><!--Jelenlet-->
 
     <TextView android:id="@+id/txtDatum"
         android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztDatum"/><!--Datum-->
+        android:text="TesztDatum"
+        android:textColor="#FFFFF0" /><!--Datum-->
 
 </LinearLayout>
