@@ -43,7 +43,8 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="06305220433"/>
+        android:text="06305220433"
+        android:textColor="#FFFFF0" />
 
 
 
@@ -54,6 +55,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztUzsonna"/> 
+        android:text="TesztUzsonna"
+        android:textColor="#FFFFF0" />
 
 </LinearLayout>
