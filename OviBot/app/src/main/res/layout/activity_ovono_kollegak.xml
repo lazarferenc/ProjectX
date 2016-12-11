@@ -4,7 +4,8 @@
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#008080">
 
 
     <TextView android:id="@+id/txtTeljesNev"
@@ -14,7 +15,8 @@
 
 
         android:layout_marginBottom="5dp"
-        android:text="TeljesNev"/><!--TeljesNev-->
+        android:text="TeljesNev"
+        android:textColor="#FFFFF0" /><!--TeljesNev-->
 
     <TextView android:id="@+id/txtIroda"
         android:layout_width="30dp"
@@ -23,7 +25,8 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="B-01"/><!--Iroda-->
+        android:text="B-01"
+        android:textColor="#FFFFF0" /><!--Iroda-->
 
     <TextView android:id="@+id/txtTelefon"
         android:layout_width="90dp"
