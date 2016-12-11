@@ -4,7 +4,9 @@
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#008080"
+    android:baselineAligned="true">
 
 
     <TextView android:id="@+id/txtDatum"
@@ -14,7 +16,8 @@
 
 
         android:layout_marginBottom="5dp"
-        android:text="2016-12-05"/><!--Datum-->
+        android:text="2016-12-05"
+        android:textColor="#FFFFF0" /><!--Datum-->
 
     <TextView android:id="@+id/txtReggeli"
         android:layout_width="80dp"
@@ -23,7 +26,8 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztReggeli"/><!--Reggeli-->
+        android:text="TesztReggeli"
+        android:textColor="#FFFFF0" /><!--Reggeli-->
 
     <TextView android:id="@+id/txtEbed"
         android:layout_width="100dp"
@@ -32,14 +36,17 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztEbed"/><!--Ebed-->
+        android:text="TesztEbed"
+        android:textColorLink="#FFFFF0"
+        android:textColor="#FFFFF0" /><!--Ebed-->
     <TextView android:id="@+id/txtUzsonna"
         android:layout_width="80dp"
         android:layout_height="50dp"
 
         android:layout_marginTop="50dp"
         android:layout_marginBottom="5dp"
-        android:text="TesztUzsonna"/> <!--Uzsonna-->
+        android:text="TesztUzsonna"
+        android:textColor="#FFFFF0" /> <!--Uzsonna-->
 
 
 
