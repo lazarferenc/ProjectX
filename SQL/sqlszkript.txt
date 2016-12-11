@@ -1,0 +1,104 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+CREATE TABLE `etkezesek` (
+  `id` int(11) NOT NULL,
+  `datum` date NOT NULL,
+  `reggeli` varchar(250) NOT NULL,
+  `ebed` varchar(250) NOT NULL,
+  `uzsonna` varchar(250) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+
+CREATE TABLE `gyerek` (
+  `id` int(11) NOT NULL,
+  `nev` varchar(250) NOT NULL,
+  `szuldatum` date NOT NULL,
+  `lakhely` varchar(250) NOT NULL,
+  `taj` int(11) NOT NULL,
+  `apaid` int(11) NOT NULL,
+  `anyaid` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+--
+
+CREATE TABLE `jelenleti` (
+  `id` int(11) NOT NULL,
+  `datum` date NOT NULL,
+  `megjelent` tinyint(1) NOT NULL,
+  `hangulat` tinyint(1) NOT NULL,
+  `magatartas` tinyint(1) NOT NULL,
+  `gyerekID` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+
+CREATE TABLE `ovono` (
+  `id` int(11) NOT NULL,
+  `nev` varchar(250) NOT NULL,
+  `iroda` varchar(250) NOT NULL,
+  `telefon` varchar(250) NOT NULL,
+  `email` varchar(250) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+
+CREATE TABLE `szulo_anya` (
+  `id` int(11) NOT NULL,
+  `nev` varchar(250) NOT NULL,
+  `lakhely` varchar(250) NOT NULL,
+  `telszam` varchar(250) NOT NULL,
+  `gyerek` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+--
+
+CREATE TABLE `szulo_apa` (
+  `id` int(11) NOT NULL,
+  `nev` varchar(250) NOT NULL,
+  `lakhely` varchar(250) NOT NULL,
+  `telszam` varchar(250) NOT NULL,
+  `gyerek` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
+ALTER TABLE `etkezesek`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `gyerek`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `jelenleti`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `ovono`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `szulo_anya`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `szulo_apa`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `etkezesek`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+ALTER TABLE `gyerek`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+ALTER TABLE `jelenleti`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+ALTER TABLE `ovono`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+ALTER TABLE `szulo_anya`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+ALTER TABLE `szulo_apa`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
